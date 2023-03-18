@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="470,371" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1006,3708" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:uas="clr-namespace:UiPath.Activities.System;assembly=UiPath.System.Activities" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="48">
       <x:String>System.Activities</x:String>
@@ -27,10 +27,26 @@
       <x:String>System.Windows.Markup</x:String>
       <x:String>UiPath.Mail</x:String>
       <x:String>UiPath.Presentations</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.Activities.Contracts</x:String>
+      <x:String>UiPath.Activities.System</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
     </scg:List>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
-    <scg:List x:TypeArguments="AssemblyReference" Capacity="38">
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="76">
       <AssemblyReference>System.Activities</AssemblyReference>
       <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
       <AssemblyReference>mscorlib</AssemblyReference>
@@ -56,11 +72,208 @@
       <AssemblyReference>UiPath.Mail</AssemblyReference>
       <AssemblyReference>UiPath.Presentations</AssemblyReference>
       <AssemblyReference>UiPath.Presentations.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Activities.Contracts</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <ueab:SequenceX DisplayName="Single Excel Process Scope">
+  <sap:WorkflowViewStateService.ViewState>
+    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+      <x:Boolean x:Key="ShouldExpandAll">True</x:Boolean>
+    </scg:Dictionary>
+  </sap:WorkflowViewStateService.ViewState>
+  <ueab:SequenceX DisplayName="MainActivity" sap:VirtualizedContainerService.HintSize="546,3643" sap2010:WorkflowViewState.IdRef="SequenceX_1">
     <ueab:SequenceX.Variables>
       <Variable x:TypeArguments="ue:IWorkbookQuickHandle" Default="[new WorkbookQuickHandle(workbookPath:=&quot;Project_Notebook.xlsx&quot;,visible:=True,autoSave:=False,createNew:=True,readOnly:=False,isWorkspace:=True)]" Name="Notes" />
+      <Variable x:TypeArguments="x:String" Name="Username">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:String">LUT9.Robert.Opiskelija</Literal>
+        </Variable.Default>
+      </Variable>
+      <Variable x:TypeArguments="x:String" Name="Password">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:String">Robotti23</Literal>
+        </Variable.Default>
+      </Variable>
     </ueab:SequenceX.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: CS31A0770 Luento-opetus 16.1.2023-28.4.2023: B) Harjoitustyön tehtävänanto" sap:VirtualizedContainerService.HintSize="484,689" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="f4df5839-b973-4181-9c78-3c39312a7be9" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,471" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="iban" />
+              <Variable x:TypeArguments="x:String" Name="ibanNumber" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ClickType="Single" DisplayName="Click 'Generoi'" sap:VirtualizedContainerService.HintSize="388,158" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f4df5839-b973-4181-9c78-3c39312a7be9" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.telepartikkeli.net/tunnusgeneraattori" DesignTimeRectangle="51, 456, 100, 42" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'Generoi'" FullSelectorArgument="&lt;webctrl id='generateIbanSubmit' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='generateIbanSubmit' tag='INPUT' type='submit' class='btn btn-primary' aaname='Generoi' check:text='Generoi' /&gt;" Guid="4c386b25-0c68-4ada-b75c-0959f5ae213c" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGgAAAAuCAYAAADEHVzQAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAARjSURBVHhe7VtPaxtHHO1HMIWk7hcIhR7yEdqC78GHHuqTL22/gAktvhhDCCKXhVIKxehkBYz/oCLjUm1pGxei5FBkg7oYVyBiiYVGuMQyS7epzOu83Z39p/VabpA0MvPgHTTz29HqvZnf/EYwb0FDaWiDFIc2SHEMGLS5+yM++Phz3L47h7ff/1BzTKTe1J36x5Ew6IuHX+Hep1/CfPY7/v7n36BVYxyg3tSd+tMHidAgOsdOBtbrdSwsLGB2dhYzMzOaIyZ1pt7UnfrTB7mSQoO4vOggg27dfidzIM3RkrpTf/pAP4jQIOZAukcnGfzu3Y9w55MHeG/R0BwxqTP1pu7Unz7QDyI0iBsVIdOaNme8pN7UnfoT0o8BgxhEZg2iOVpK7QltkILUBilObZDi1AYpTm2Q4tQGKU5tkOIcq0Hz6w3UOg56r71hfVz04Z6foX54gEKhmPncNHPL9n9m89fs/qs4JoPKKB473lj5OMVW5vPTyykwqIiC5XrjAC7aYqWsGqWof6WMpc0DVK1T9C5unkFvytEbtNZC1xvFRW3jminMeIpqx4V74Q3gpcNe5wir9+NxDTTZZx9h6YcWmud9L5TodVswVuKxZBGrP9loO1EcnDPU9sqJOH9S8Z2/R/GQk8cPRacRxIiswPZYuu799RKV9djki4/zOGq7Dkdu0FLdT23u8dPM/ktpCOHje1Uc5ycohLGBQVLANOwGFsPY+GpOo4/mL9tBnBRWvHf6HcR4NGfLjhmcQHIiKm/QVocj9FH/Lrs/m9uo/Ok/17UOsBwUD3OFfVTEiiIsU4oQGCTA1WUE6XN+7Sgw+AwVueJ2bCGVgHOKymYZ897zJSybJ+gy9lULy15bZBBei9VlmliMr9q9l9E4G9uYY9uKiZLl+O2uDSMxjsoGeZtkxgs+PkHPGz2OYA969Afa/PjiwP/xcd4/Cvp+C9pkipOpJ+I3Tc7y6Lv9zw6erCXjSF9I0fdt/DNXw2CsP46YdDvpPjmxou+c3hWUZ1BmXwqhIZcblBZHVlSXYzhh/XGyCxr/uahqU96g4fagfdS8MG1QmiM3KFHF7SQrnIgpg4IU5zafZ8SmObxBfmo6Q/VRMi6LecLKFGftpavSKUxxycqpj/ZxA8bXwcYqOFfYFecgsaF7IXJWRkVCWxQJ0bmphM/Wn6MizkzNw/2gbXiDkkXCbrjx8x0MswXrlR2uilxhZZEgCojqtBcJPssovfBePR/ioFqSz+SV2QI9638YlFtmE1Hayhf2BpXZEYtY3GigZouDZ1x4Hj67Np6Y+8lSllz5GZVW6r87x0HTasT+t7uOQWRx4EAr36G6awal9zDC3pCDquabURukOLVBilMbpDi1QYpTG6Q4tUGKUxukOLVBinMog/T1k8nwyusn+gLX5Eidr7zApa9ATp65VyD1JeLJkTpTb+pO/TMvERP6Gv7kQL2pO/XPvIYvQee4vJgDuVFpjofUm7rLlSMxYJCGSgD+Awe/dxjaR7BGAAAAAElFTkSuQmCC" InformativeScreenshot="47519b4d6a3dc4a46dcf36974672a058.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Henkilötunnusgeneraattori, y-tunnusgeneraattori, IBAN-generaattori, luottokorttinumero-generaattori' /&gt;" SearchSteps="FuzzySelector, Image" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NGetText DisplayName="Get Text 'FI74 4723 3595 0003 75'" sap:VirtualizedContainerService.HintSize="388,158" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="f4df5839-b973-4181-9c78-3c39312a7be9" TextString="[ibanNumber]" Version="V3">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.telepartikkeli.net/tunnusgeneraattori" DesignTimeRectangle="612, 278, 267, 25" DesignTimeScaleFactor="1.25" FriendlyName="'FI74 4723 3595 0003 75'" FullSelectorArgument="&lt;webctrl id='results' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl id='results' tag='DIV' type='' class='' /&gt;" Guid="6a4961d7-bd9f-4a90-8967-1696e029bdfc" InformativeScreenshot="2d35a8f1ce1a5999f979724855463843.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Henkilötunnusgeneraattori, y-tunnusgeneraattori, IBAN-generaattori, luottokorttinumero-generaattori' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
+              </uix:NGetText.Target>
+            </uix:NGetText>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJySURBVDhPYxicYNnSpQyPHj1iiAgNY7O1shK2MrNQCQsJFeVkYWU4dOgwVBUaiE3LZUgurmMOCw1XdHdxjbA0M+810NHdqqOhedbM2GRqSHCIPFCM4dDR41AdUNBfU8Iwp62WrSYnzSYzKnRmlLfrfVcb69+Gevr/dTW1/5samcw1cwoQ+L/Kh+3bDFfJ77PcpL/P8+b+8/AIw89d9QwM++ZPkJ7XUllTm591ITUm6muAt/d/ZwfH/+Ympv811TX+2xlqXb7ZaFn8vddo7dce/Tvf+vTvfZtgsP/bVIvEH8vCORhu9KbJbe8p0+vonSQfG5c408fH/7+zk+t/EyOT/ya62j8XxOv+/dyu+/drp87/rz16r7716T371qfz/9sE/S/fZ1hnMnypshb9UmMvsDrHlWFBSWhVf3bw/9JI9x8+rk4rE/1dwr90GBz52q79/2u33vNvU+0cv89w0Ae64Nq3fp3/36cY72P4XGVtA8T6n6r0GD7XaJR8qNX8/65B79HbbifF95XSDF879GdADTj9bbIN36/d9azfJptshxpwnuFTqYnvp2Ijz0/lWkAD1Es+12n8/9qk8+Bbn4P81wYVkAHToAac/DbZmvfXgU6gAabbvvXrQgwA2q4ENMTwc5UuxIBajf9fGnUefO21l/+CbECX3smvk6wwDfg6LYXp69Rkts91UBdgGKAHN+AbigFQL8AA0P8Mn6vV84AGfAMacAVogOyXBmWGr+16fUADfgIN2IdkwBqgAd+/TzY+AtUON0ASaIA50AADoAHsX+rBBigADbAAGqANNIAZaAAjMBDVgQZYAA3QgWofMMDAAADvylz/PVB6QAAAAABJRU5ErkJggg==" InformativeScreenshot="27c462c01f53f4e07ab7da24bdf53663.jpg" Selector="&lt;html app='chrome.exe' url='https://www.telepartikkeli.net/tunnusgeneraattori' /&gt;" Url="https://www.telepartikkeli.net/tunnusgeneraattori" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Pankkiselvitin - Laskupiste" sap:VirtualizedContainerService.HintSize="484,948" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" ScopeGuid="98705257-7d6c-48ec-8aff-ccba52966ad9" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,730" sap2010:WorkflowViewState.IdRef="Sequence_4">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="bankName" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT bban'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,219" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="98705257-7d6c-48ec-8aff-ccba52966ad9" Text="[ibanNumber]" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.laskupiste.fi/pankin-nimen-selvittaminen-tilinumeron-perusteella/" DesignTimeRectangle="293, 524, 905, 53" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'INPUT bban'" FullSelectorArgument="&lt;webctrl id='bban' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='bban' tag='INPUT' type='' class='form-control' aaname='' /&gt;" Guid="a8807243-e0e5-4e59-a6e5-15eb78ec7108" ImageBase64="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" InformativeScreenshot="5eec0292b02c024088d753ac44e41a98.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Pankkiselvitin - Laskupiste' /&gt;" SearchSteps="FuzzySelector, Image" Version="V2" Visibility="Interactive" />
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NClick ClickType="Single" DisplayName="Click 'Selvitä'" sap:VirtualizedContainerService.HintSize="388,158" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="98705257-7d6c-48ec-8aff-ccba52966ad9" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.laskupiste.fi/pankin-nimen-selvittaminen-tilinumeron-perusteella/" DesignTimeRectangle="1197, 650, 108, 52" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'Selvitä'" FullSelectorArgument="&lt;webctrl id='getBankDataButton' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='getBankDataButton' tag='BUTTON' type='submit' class='btn btn-white' aaname='Selvitä' check:innerText='Selvitä' /&gt;" Guid="31aa0e9c-38d8-4f5d-b2c5-522f149adca3" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHAAAAA4CAYAAAAl63xKAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAUuSURBVHhe7ZxdSxtLGMf9CF762fwCQl2QICuSIkFYSrxIOZxQYogBsYhQROxNCIJIiwRCxLcGNBcGqhTL8Y29aIgL+j/PMzuz2cTERk/FnZP5waCZnc1u5rczzzN7MUMwaI0RqDlDOzs74HJ4eCj+mhK9cnBwgFqthuvra6mtxdDNzQ24cENDdGk2m6jX60JkmKHb21txMCxwb28Po6OjGBkZwfDwsCmvWNgBu2AnDEu8uroS/zND9/f34KIEckMjLnqFnbAbHmzhURgkMUog2+YTxsfHcXFxIeoMrwc7YBfshN0wHBMVDwSq0WfkRQd2oUYhEw53DwRyQy6GaBH2YgRqiBGoOUag5hiBmmMEao4RqDlGoOYYgZpjBGqOEag5RqDm/L8F/iwi8cbC2GwR57KqX7yGC7fhyU/RJXoCvUuUV1J4G6OO586nYk0nkV4r4bQh2/TLcwW6XzAnrp1E4R9Z9zvcEt5P0L1mK2DtJys2xqwE1s/8wy9FtATenaPwToqzYrDjcdjTMSkyiY0b2a5fniuwWcXSNJ03vYxvTVlHeOUM3YeDwk9ZEUYKjC1WfYGrcYxN0D13a/sHiZbA/Zwva+YTTsKzl+fi5LAOV37sm/8whT7Ew/YHfpB6CHwlIiXwvOD4Ahf2Zc0juDVsLCQRo6denBNLYG6lgos7eZxpE+hiI+m3TZc7Y5uSY2Fuix+TfczzeW9y2OXDN/tYctRMECqhB8OtbSKfclr3QzPI29QnlC9lgxciUgJxtIwY//jJDLYf++EN6uAp7iiaZlM55BcXkZ6VHfwuNNo6RqC7mfTbZPw4FdAsIS06PYOymDI7BH7/QteguCzqbDiZRXHN/OdqMCscL3PMY2kd9zO1jOPwQ/WHiZZA6uYgBpKcxEIRuz86Rwvw7SN1FrVJl8JZjRphNpaOZFXnFPpAlI9X4thG9YHYDoECVddjCvUa+BW+1bs6Vme4vYX8oax7ASImkLijLPSjA8vyfzwX++8ijoMAWMPSpN+R+a8VlCutspGlxIHaJwpyDD6IgR7KGf87W9Ooi60U15H4qqx6jsAu7C7415rvIyI8l+gJVFDicryZQ0LFlCnqTB5wahQ9UnoLJFSipEabWjJMUsYZTHVPF+h+L2H1Q5IyZxuWaNcqgylQ4Z1hfdbvCKdIgTEQmEP5d7Glm8A7WiKIEUxxlqZRdyslvttercsGzNME/qKHQsRuK06J1KacEapY/4vbD7pAIshOaY3VmkJDsa4X3QQSIuGg+nTpXE6fCay2LbifIvAyiNvvt9vfNJSzfv3ACDwtU9Jy1mjPEHkEyg7yU/xWEiMyzs5R2PRa5/cQiLM1P6PMZPzRPLOGU3nIp5vAKvIiLsfRNljpmwtyhpivyCqGFvZpGccHRqAK+mMTtv8WhkqQzCTWcKJkBcsIKrz+y3Jan4Ej3tqEOr2XQJwFGSIXZ7PzFUE3ga0EaGyCpsosX4/iJh0Rr81EvYM0Ly+yKdgWLTeSCVE/MALdo6JYDNvh96BTjr9AbxuWRNd3ptx2v/XGpqdAupZaE3Z9RddNINGoYiWpkpQYYrP0UHF9R+ZsxVNYqVC8rq/Bps8DHwMNvTECNccI1BwjUHOMQM0xAjXHCNQcI1BzjEDNMQI1xwjUHCNQc4xAzTECNadvgWajn+jxpI1+zFZb0YIdPGmrLbPZXTQLO+lrszuGG7JtI/L1CztgF+yE4e0mwxu/dhVoiB49N3xlcVzMlsvRLWrL5fBGr4pgBBr0xAjUGuBf1PyjtmdJkKYAAAAASUVORK5CYII=" InformativeScreenshot="8db12341cff06f87bd234eec45ddc96e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Pankkiselvitin - Laskupiste' /&gt;" SearchSteps="FuzzySelector, Image" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NGetText DisplayName="Get Text 'POP Pankit (POPFFI22)'" sap:VirtualizedContainerService.HintSize="388,158" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="98705257-7d6c-48ec-8aff-ccba52966ad9" TextString="[bankName]" Version="V3">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.laskupiste.fi/pankin-nimen-selvittaminen-tilinumeron-perusteella/" DesignTimeRectangle="313, 601, 196, 25" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'POP Pankit (POPFFI22)'" FullSelectorArgument="&lt;webctrl id='convertedIBAN' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl id='convertedIBAN' tag='SPAN' type='' class='' /&gt;" Guid="230dae01-5a63-4de6-aec8-8afd771640ca" InformativeScreenshot="853aa6cbeeb36094e87afe1e1d1a5827.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Pankkiselvitin - Laskupiste' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
+              </uix:NGetText.Target>
+            </uix:NGetText>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKJSURBVDhPlZJ9SBNxGMdPIqz+KQjLvDs3ZyGUYBJY/WEQhEVG6jTLl206Kgh7gbRQwZGahEX90avlG2ISSqlIGRGppfN2c1mShWXllErWnCy33d1m7em57UrRQfSFD7/jeD7f3z1wxPzY4oggoS5lo7vtVKnQqO0TatLN/I2EMe7Slm5XuaLQVRYRKY0ujktHLxeqD+S5H5wedbed9PLXdgJXGQOuiihwla8HlH8iw4gKWSpp/jgLVwYL1akVQn2WwF3ZjsMKcJXK8JSL4kIcSAGyRNIJgr+eoOVvJ/HchWgUA0oLsSNJPpkrU8j4qsTXs0Nt4G7Pl24OKC2kB1lNjOZRx+wXt3m80+Pg6bvp3/f8hkUCVy4x986JKAkmK/Te2/xY8FjHYdZQC7NsPXieVeIAroLrzJyLgOkSOViL5fC9SOY77To5OP2ll8WC3pfHNwNvMcN0dx1wn03gNLXCRNEm+HgmGoaOUGDKJcGoCQOjGtGQMKgl4X0eDd/OylrEgi6xQMCCySc1MPPBBFZ9Kz7XguV5M7A5MjCowhbBIKw6rAkL1lbNL3CMmmCqvxVsA53w450e2Fx5wALEiyUlBJMRohw8EesQV/ifgp4M0vr0IBlP9CYHr8Iv6LR0N8FYQ/E/C1gERbifTDV2HSKX+f4Fg5raweaEfxk4GgWOT4MBC0RR3PthKgmNidRIh5KM8cl/wmSHphm1iomvHVfBfFf3t8ColQOT7b+1aR8FtXvokfYUapekzYXJXBNkUJFxrIZuYTThtqmBx96pN3roSFeIN/6q3k1bGvbS9Z1pZLSkBA6bGbKiJ5OOtw33F0++enGnWRl5q3k/WfAojdw6fHhdsDQmhSB+A65tKiZww3onAAAAAElFTkSuQmCC" InformativeScreenshot="e20325b371eeda185f3e120683fdda60.jpg" Selector="&lt;html app='chrome.exe' title='Pankkiselvitin - Laskupiste' /&gt;" Url="https://www.laskupiste.fi/pankin-nimen-selvittaminen-tilinumeron-perusteella/" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Henkilötunnusgeneraattori | Lintukoto.net" sap:VirtualizedContainerService.HintSize="484,750" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="DebuggerApi" ScopeGuid="c31f5667-f4e1-476c-bc00-b8d7934db3bc" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,532" sap2010:WorkflowViewState.IdRef="Sequence_5">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,219" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="c31f5667-f4e1-476c-bc00-b8d7934db3bc" Text="01.04.1976" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.lintukoto.net/muut/henkilotunnus/index" DesignTimeRectangle="482, 555, 263, 47" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' class='' aaname='' /&gt;" Guid="98cd256d-46b1-47bd-846e-bc2704cd31db" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAQsAAAAzCAYAAACACy0mAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAUaSURBVHhe7Z3NTuMwFEbn/Ve8ABuEkNgAKwQbWBZBBQsiIYGYVoJUHYooXQCFFnly7evUsZ3WpE1pk+9IV6KO4/yo34kdDcyfz6+RQKFQqFkFWaBQqKByZNF/HYg47ohWqy3+/m2hUKgaFeWe8k8esN2QkcVT71l0u//Ex8eH+P7+FgCAekG5p/x3u13pA9MPqSzIJNQBAAAI8oE5w0hlQVOP4XDI3QAAdYd8QF5wZEFrlfF4zN0AAHWHfEBecGRBLzcAAMCEvABZAABmAlkAAIKALAAAQUAWAIAgIAsAQBCQBQAgCMgCABAEZAEACGIpsuj1euLg4ECcnJyIz89PblW0222xt7cnrq+vuQUAsIosRRZxHIuNjQ2xv78v3t/fuVVxc3Mjt52dnXELAGAVKU0W9OutnU5HXF5eitPTUymEra0t0Wg0xMXFRVpHR0dyG8086PP9/b0jFADA71OaLKIokhIoUoeHh85ypRiPIkrkRIJKK3rkbVVhIG6byXU1b5OfkiuO6Dqj5Mp/wOutaNK94TGIQuOASlOaLGhZ4RNBSO3s7Ih+v88jFcQTgMFds0RhqNA27/TRloUWIgWbxdFoittX3hxCHKn7YsgBsgA2pcni6upKvrgsUsfHx+Lt7Y1HKkL2abscfksW5QBZAJvSZPG78NN2qUsOdUzIAlSV0mRxfn7uXWKE1O7urhgM5gmdno43RBRzk4Vekni387RcbpM/q9CoAOmyp+x2Jdt5HK9AeJkkt8mf1dLBHEufW95xNfbxfceb3seVq+pvHcuzXEmXe2m55weqQWmymOedxfb2tnh5eeGRCpJ+sbmcWUbeUsVqN8ZJA+Z5H5IJv4E3dAmZdiNwWhBKZk3RpHPR5+4cV0tx8o5CS3ByHiF9AmShj23eR31v0jbz/QmoGtWVBWGEMC3jy+6dXfA+aRsHItMnQYc5fZHI+9my0Ptn260li3dfv8yc4zrkSdDE7jNLFrx96phMzv0C60+1ZWFizBCcJ6EdEjMUeV9+2R4gCyeYOvDuU3sxsvBcg4dsn2myCJGPgS1bUBnqIwuJ+4TMhk9tz4R2blkkZMbg8BnBnFsWPH6m7HBP7ZMnC13T5MTnmfZVBVlUj5rJwhNAI6jOE59YhCzMMNr7EYVlweNa+3pnDSF9ps0s7PuSoM7F2sbXAllUj8rK4jG2v9qEGwpCBUO9THTCvhBZTEKeeWGpKSoLn3gSMiII6TNVFvITC8cUBp9fzrVAFtWjkrKYPPHMkPi+8Ax/wX2hCpaFHl8GMAlSlA355PiesYrKQp93Glg9CzD2C+mjzy1XFoR5fdzCkk3vAd8r7zWCtaeyMwsznGlZwZuQ85QkgmWhgzw5nr1P9mluUFQW6Wd9TNUu24z9ZvcJkUWCI1XrHsv9VRtkUT1WUhbz/6OsH+IJ/sLhoCFEYF0pTRYPDw9ic3PTK4NZRb/SPhqNeKTyyX3iLxD1dPcsgQBYE0qTBfH19SX/NsVPiv6Ld/pbGMtCT9FLfeLzUibv5ScA60CpsgAAVAfIAgAQBGQBAAgCsgAABAFZAACCgCwAAEFAFgCAICALAEAQkAUAIAivLFqtthiPx9wFAFB3yAfkBUcWcdwRw+GQuwEA6g75gLzgyKL/OhDdbpe7AQDqDvmAvODIguqp9yw7LPsXuwAAqwEtPSj/5AHygemHjCyoyCQ09aC1Cr3cQKFQ9SnKPeXfnFHocmSBQqFQvoIsUChUQI3EfxnZkSMCED98AAAAAElFTkSuQmCC" InformativeScreenshot="3fbefacc39d0b213cd9635a4ee455ce3.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Henkilötunnusgeneraattori | Lintukoto.net' /&gt;" SearchSteps="FuzzySelector, Image" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="480, 553, 267, 51" ElementType="InputBox" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' class='' aaname='' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAQsAAAAzCAYAAACACy0mAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAUaSURBVHhe7Z3NTuMwFEbn/Ve8ABuEkNgAKwQbWBZBBQsiIYGYVoJUHYooXQCFFnly7evUsZ3WpE1pk+9IV6KO4/yo34kdDcyfz6+RQKFQqFkFWaBQqKByZNF/HYg47ohWqy3+/m2hUKgaFeWe8k8esN2QkcVT71l0u//Ex8eH+P7+FgCAekG5p/x3u13pA9MPqSzIJNQBAAAI8oE5w0hlQVOP4XDI3QAAdYd8QF5wZEFrlfF4zN0AAHWHfEBecGRBLzcAAMCEvABZAABmAlkAAIKALAAAQUAWAIAgIAsAQBCQBQAgCMgCABAEZAEACGIpsuj1euLg4ECcnJyIz89PblW0222xt7cnrq+vuQUAsIosRRZxHIuNjQ2xv78v3t/fuVVxc3Mjt52dnXELAGAVKU0W9OutnU5HXF5eitPTUymEra0t0Wg0xMXFRVpHR0dyG8086PP9/b0jFADA71OaLKIokhIoUoeHh85ypRiPIkrkRIJKK3rkbVVhIG6byXU1b5OfkiuO6Dqj5Mp/wOutaNK94TGIQuOASlOaLGhZ4RNBSO3s7Ih+v88jFcQTgMFds0RhqNA27/TRloUWIgWbxdFoittX3hxCHKn7YsgBsgA2pcni6upKvrgsUsfHx+Lt7Y1HKkL2abscfksW5QBZAJvSZPG78NN2qUsOdUzIAlSV0mRxfn7uXWKE1O7urhgM5gmdno43RBRzk4Vekni387RcbpM/q9CoAOmyp+x2Jdt5HK9AeJkkt8mf1dLBHEufW95xNfbxfceb3seVq+pvHcuzXEmXe2m55weqQWmymOedxfb2tnh5eeGRCpJ+sbmcWUbeUsVqN8ZJA+Z5H5IJv4E3dAmZdiNwWhBKZk3RpHPR5+4cV0tx8o5CS3ByHiF9AmShj23eR31v0jbz/QmoGtWVBWGEMC3jy+6dXfA+aRsHItMnQYc5fZHI+9my0Ptn260li3dfv8yc4zrkSdDE7jNLFrx96phMzv0C60+1ZWFizBCcJ6EdEjMUeV9+2R4gCyeYOvDuU3sxsvBcg4dsn2myCJGPgS1bUBnqIwuJ+4TMhk9tz4R2blkkZMbg8BnBnFsWPH6m7HBP7ZMnC13T5MTnmfZVBVlUj5rJwhNAI6jOE59YhCzMMNr7EYVlweNa+3pnDSF9ps0s7PuSoM7F2sbXAllUj8rK4jG2v9qEGwpCBUO9THTCvhBZTEKeeWGpKSoLn3gSMiII6TNVFvITC8cUBp9fzrVAFtWjkrKYPPHMkPi+8Ax/wX2hCpaFHl8GMAlSlA355PiesYrKQp93Glg9CzD2C+mjzy1XFoR5fdzCkk3vAd8r7zWCtaeyMwsznGlZwZuQ85QkgmWhgzw5nr1P9mluUFQW6Wd9TNUu24z9ZvcJkUWCI1XrHsv9VRtkUT1WUhbz/6OsH+IJ/sLhoCFEYF0pTRYPDw9ic3PTK4NZRb/SPhqNeKTyyX3iLxD1dPcsgQBYE0qTBfH19SX/NsVPiv6Ld/pbGMtCT9FLfeLzUibv5ScA60CpsgAAVAfIAgAQBGQBAAgCsgAABAFZAACCgCwAAEFAFgCAICALAEAQkAUAIAivLFqtthiPx9wFAFB3yAfkBUcWcdwRw+GQuwEA6g75gLzgyKL/OhDdbpe7AQDqDvmAvODIguqp9yw7LPsXuwAAqwEtPSj/5AHygemHjCyoyCQ09aC1Cr3cQKFQ9SnKPeXfnFHocmSBQqFQvoIsUChUQI3EfxnZkSMCED98AAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NGetText DisplayName="Get Text 'Henkilötunnus: 060202A9…'" sap:VirtualizedContainerService.HintSize="388,158" sap2010:WorkflowViewState.IdRef="NGetText_3" ScopeIdentifier="c31f5667-f4e1-476c-bc00-b8d7934db3bc" Version="V3">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.lintukoto.net/muut/henkilotunnus/index" DesignTimeRectangle="372, 792, 1238, 32" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Henkilötunnus: 060202A9…'" FullSelectorArgument="&lt;webctrl class='header' parentid='master' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='header' parentid='master' tag='DIV' type='' /&gt;" Guid="70e018e5-820c-4157-9f10-1a9daa6c1757" ImageBase64="" InformativeScreenshot="e5b86e878a2e40aa92675d9d52255a82.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Henkilötunnusgeneraattori | Lintukoto.net' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
+              </uix:NGetText.Target>
+            </uix:NGetText>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="7aa1f80ccfbeeabcc447f038cf1b334c.jpg" Selector="&lt;html app='chrome.exe' title='Henkilötunnusgeneraattori | Lintukoto.net' /&gt;" Url="https://www.lintukoto.net/muut/henkilotunnus/index" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Netvisor" sap:VirtualizedContainerService.HintSize="484,1025" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="492396ea-28cd-4ce9-b947-77bc99c44308" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence sap:VirtualizedContainerService.HintSize="450,807" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="ui:PasswordCredentials" Name="credentials" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uas:GetUsernamePasswordX OrchestratorCredentialName="{x:Null}" TimeoutInSeconds="{x:Null}" AutosubmitTimeoutSeconds="10" Credential="[credentials]" CredentialName="UiPath: https://koulutus.netvisor.fi/tableui/login/login.asp" CredentialsSource="CredentialsManager" DisplayName="Get Username/Password" sap:VirtualizedContainerService.HintSize="388,174" sap2010:WorkflowViewState.IdRef="GetUsernamePasswordX_1" />
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'LUT9.Robert.Opiskelija'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,219" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="492396ea-28cd-4ce9-b947-77bc99c44308" Text="[credentials.Username]" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://koulutus.netvisor.fi/tableui/login/login.asp" DesignTimeRectangle="525, 485, 275, 37" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'LUT9.Robert.Opiskelija'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='username' tableRow='2' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='username' type='text' tag='INPUT' class='' aaname='' /&gt;" Guid="7311d30b-07fe-429e-a967-1a67bd1d3225" ImageBase64="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" InformativeScreenshot="942cff07946a6f281c83f86cf948d058.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Netvisor' /&gt;" SearchSteps="FuzzySelector, Image" Version="V2" Visibility="Interactive" />
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Salasana'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,219" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="492396ea-28cd-4ce9-b947-77bc99c44308" Text="[credentials.Password]" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://koulutus.netvisor.fi/tableui/login/login.asp" DesignTimeRectangle="525, 535, 275, 37" DesignTimeScaleFactor="1.25" ElementType="InputBoxPassword" FriendlyName="'Robotti23'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='userpass' tableRow='3' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='userpass' type='password' tag='INPUT' class='' aaname='' /&gt;" Guid="c299d43b-d9e9-4379-bd1a-10335c1b643d" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAARcAAAApCAYAAAAf1G29AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKASURBVHhe7d2/blJhGMfxcxWVqUMTBwYHr8G4dDKkN+BoTFy6GBc3jXMTr8AmXIAbozEaFcGmaIEgUP4UKaV/Yqyp2keek3BygPe8KPTZvr/ks7ztaejyzTksJxDGGDMYcWGMmWwmLoeDoZT2KvL2Q0HevP8IAE7aCG2FNsO1ibg0Wm0plqqyV+/Ll8ZAys0hADhpI7QVhd1K2I7pRXHR+hRHv1TZP5b6wXdp9n7I/rdzafV/AsAEbYM2QluhzSjsVmfuYKK46O1NeVQivaBz9EsOjv8AgJe2Qpuh7dCGxBfFRZ+fap1T6Q5/S+/kEgD+iTbja/csbEh8UVz0Cxq93dEauf4AALhoM7Qd2pD4JuLSHlw4LwYAH22HNy76/OS6EAB8tB3EBcCVIy4ATBAXACaICwATxAWACeICwARxAWCCuAAwsXxcOnl5upGWlSAl1ze2JNcZ/6wm2w/WZTUIZPX2pmzvzDu/lHfZTbm1Fkiwti73srW5581XW5JJpyS4lpbMs7w055wnftbE/wHAopaOS+7JTQlGoRhbefQ6PC9n70+cB3deyI7nvNd8KXfj50FGnn/2nJ/k5fGN+HlKHuZ858mfNekcwOKIi+ccwOKWjguPRQBclo8LADgQFwAmiAsAE8QFgAniAsAEcQFggrgAMEFcAJggLgBMEBcAJogLABPEBYAJb1z0Pa+t/rnzQgDw0XYkvita31Bf7546LwQAH22HNiS+KC6Hg6F8KlV5ET2A/6LNKI7aoQ2JL4qLrtFqh7/UODiT7pDvXwAk6x5dhK0ImzFqx/Qm4qLT+ujtjT4/6Rc0AOCijdBWTN+xjDcTF8YYu4oRF8aYwUT+AixlZwO2EL4yAAAAAElFTkSuQmCC" InformativeScreenshot="45801b0bcd9f174570673333c8878555.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Netvisor' /&gt;" SearchSteps="FuzzySelector, Image" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="326, 530, 176, 50" ElementType="Text" FriendlyName="'Salasana'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='3' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='TD' class='borderleft' aaname=' &amp;#x9;                        Salasana: &amp;#x9;                    ' check:innerText='Salasana:' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAALQAAAA2CAYAAAButbPhAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAVLSURBVHhe7ZpdayJJFIb3L+ciN7nIjTdhaDLIsAmJwXzJIJEWmiAjoySghLhIIw6b2RDCNCQjE9lIggwyYuTsqa4qP1pjrIF1szXvA02wLKst+vH0W9X5jZjzv27EHwD+90BoYBUQGlgFhAZWAaGBVUBoYBUQGlgFhAZWAaGBVUBoYBUQGlgFhAZWAaGBVUBoYBUQGlgFhAZWAaGBVUDoRfIY0OlRhlbXE7T0Rh4r7zK0Wwqo3Vd9fop7KmzxeFtndKdaflUg9ILoXZ5QzFES73h06Ob58Mh5q+ROlCj4oTobA6E1EHohNMj7nYVz0lRoqKYBHQo+pKXoXqDaTIHQGgi9CL6d0ZqowkeXqiFC/5rSolI7Oar/VPSA0BoIvQi00Ac1rsfT8dP8/nqWyn+rBkH3nvzjLK3Fk4PMvbS+T85RlYLvqk/IM0LrzK5jDR/Lb1MUP76gVuSH076q0u5OkpZf6Df3mGrOu/Unavn5YbRykuS43Ler+mnmnutsIPRCUJGDL9LqQYn8Lw/Ue6kS9wNy34nP8EV1z6jiX5B/fkaHyX15sZNVaquuU4Vu1WhDZHYnRRv5Kvni86USbYt+/PnReNP7M08r3La8laPCOffzq+Tq86Q+DX+EBmNqodcSHKc4au0Wa+Pjjn5/o7ky9Zxsn3LHg9CLolEhRy0Kw4Mr1epmlg6LFxRMlCuWrJ4Pd0Oc0oNq0XSociDG4Dw+qOaTQt+dZGiFz5H+rBo0/Rspj5Mn/VZ4d3iTI3/sR8bnSbHk8RxVlE0mYw7uShPrhgc63RHny1D5UbaYzZWB0K8Evq3Wi7nh7XfkWN7Kkz960WZwVxSLSL7I31SDYYauH4lzcl5Xr6XQaXKvxuqgEdExB0Jzhe+pJs3dx1Tk+z/P5FxnA6H/I3rf7yn4VCUvJaqekIGPOFe46NZdt0Pt24Bv1zUqHOdpe2eflsP+cwr9o0OtL5fh7d5zcxTf1Dl5KJ+OHOF3WOc8LG77l83nY9EcY2qhp+3cSEm50kcL7FxznQ2Efg10G5RLSKHiZV0lOxQUs7QaiSlre3lKp0S2fEHo/gP5bnqwyJOyckZNlWg3KV6PyMd0bmvk7qWUQOpw9mmjeDPM0CZj6gxdvFcNQ6TQYsGoGozmOhsI/a/zRPWMWLkPM+NUghKtigupcmG7nJEXNlGg+m2bOiMxO/jwstBXnlxQrbyvUtDsjFTbbpiNo0IP6HfD6nt6PBRsuypPbjSmgdBmc50NhF4AX/MiM05b9IzwuRDe9mMfm/yiTeWw4qUoN/EgRsszS+hA7muzYOMLPUGDvHBHQct3zQs6jgzRnQSBWnxJKU3GZOYW2nSus4HQi6BVpbiodrzi96YtvB4D8sLIoS+cvpD75F6HPQZ0LgsUYxnEe8N4GhVaC5alSmQPt1XKcrt4z6NKmNe75L8Xr9MTQnXOZV8Zg0zGZOYW2nSus4HQC6IjtqbULTx8EHEk/pdjdOHDebUsqrOkx9UxXKjFM+SW5N6wl5L51dmJZtDJyKGlWdpUe8t6X5dzsZOI3MYbZ3JLcbBffMGRIyO/b7xAV6oiG41pEDnM5spg2+6V8NigyrSnYbyo8ptPqtOQVm38CVts70T2U3k7ltcldcqiMFxoeRTT/9nHnxdP3a44x/f+8MI2nY0FveYFpQc/Lj7Ebod4+je2RW4wptGi0GSuDIQGvwoQGlgFhAZWAaGBVUBoYBUQGlgFhAZWAaGBVUBoYBUQGlgFhAZWAaGBVUBoYBUQGlgFhAZWAaGBVUBoYBUQGlgFhAZWAaGBVUBoYBUQGlgE0T8dp+6ZR0Sk6QAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFoSURBVDhPY6Af+P+fMeXpnYlJT2+oQ0VIAylPb88G4v9AvAMqRDxIeXorEqoZjJOf3QmASmEBE98XMUz9sZ5h6vdUhvn/OUBCQKcvQzHg6Z37hY8fc4LVo4DKU90MPS/PAQ34D8WPGKZ9j0l+ensqsgFgQ57cLoTqggKQ5qpT/xkarx1AMgCMhZZ/Ouz78N41FAOe3r4FCliI5qwNFQzlR08CDfgOxpM+P0M3hPHoy4MCVx6fDHt49znUkH+ZDx8KMjBEzhRhiJ/3H4yTFj1nKDt8mKHx6kF0AxhmfXvNdPHJFyD+zn35ySnTu/crILY3NDABNd+GGwLCKcuvM3Q+O4puCOOhVweABvwH4h6IZhiIm1+EYgAET2aY8j0WqPER3IBVH85gagaB0FWcQA330QxYDJYDRSUoSkFRO+dLCVgMK0iYH4BiQNy8cKgMCSBh3g6I5rmzoCIkgriFakADpoEDlj6AgQEAkh4dRU72wboAAAAASUVORK5CYII=" InformativeScreenshot="9abc7c201f88ea68fc6c8bef50ed8299.jpg" Selector="&lt;html app='chrome.exe' title='Netvisor' /&gt;" Url="https://koulutus.netvisor.fi/tableui/login/login.asp" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
   </ueab:SequenceX>
 </Activity>

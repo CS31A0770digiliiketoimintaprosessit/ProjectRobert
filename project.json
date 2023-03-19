@@ -3,13 +3,9 @@
   "description": "Blank Task",
   "main": "Main.xaml",
   "dependencies": {
-    "UiPath.ComplexScenarios.Activities": "[1.4.0-preview]",
     "UiPath.Excel.Activities": "[2.19.0-preview]",
-    "UiPath.Mail.Activities": "[1.18.2]",
-    "UiPath.Presentations.Activities": "[1.10.0-preview]",
     "UiPath.System.Activities": "[23.4.0-preview]",
-    "UiPath.UIAutomation.Activities": "[23.2.0-preview]",
-    "UiPath.Word.Activities": "[1.16.0-preview]"
+    "UiPath.UIAutomation.Activities": "[23.2.0-preview]"
   },
   "webServices": [],
   "entitiesStores": [],
@@ -49,6 +45,14 @@
     "modernBehavior": true
   },
   "expressionLanguage": "VisualBasic",
+  "entryPoints": [
+    {
+      "filePath": "Main.xaml",
+      "uniqueId": "99b1a483-5691-4994-aab1-516234f3b5f5",
+      "input": [],
+      "output": []
+    }
+  ],
   "isTemplate": false,
   "templateProjectData": {},
   "publishData": {},

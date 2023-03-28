@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1794,1085" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:si="clr-namespace:System.IO;assembly=System.Private.CoreLib" xmlns:uas="clr-namespace:UiPath.Activities.System;assembly=UiPath.System.Activities" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="818.4,1095.2" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:si="clr-namespace:System.IO;assembly=System.Private.CoreLib" xmlns:uas="clr-namespace:UiPath.Activities.System;assembly=UiPath.System.Activities" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="96">
       <x:String>System.Activities</x:String>
@@ -135,7 +135,7 @@
       <x:Boolean x:Key="ShouldCollapseAll">False</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <ueab:SequenceX DisplayName="MainActivity" sap:VirtualizedContainerService.HintSize="512,1020" sap2010:WorkflowViewState.IdRef="SequenceX_1">
+  <ueab:SequenceX DisplayName="MainActivity" sap:VirtualizedContainerService.HintSize="1817.5999999999997,14816" sap2010:WorkflowViewState.IdRef="SequenceX_1">
     <ueab:SequenceX.Variables>
       <Variable x:TypeArguments="ue:IWorkbookQuickHandle" Default="[new WorkbookQuickHandle(workbookPath:=&quot;Project_Notebook.xlsx&quot;,visible:=True,autoSave:=False,createNew:=True,readOnly:=False,isWorkspace:=True)]" Name="Notes" />
       <Variable x:TypeArguments="x:String" Default="LUT9.Robert.Opiskelija" Name="Username" />
@@ -152,7 +152,11 @@
       <Variable x:TypeArguments="sd:DataTable" Name="Oslaskut" />
       <Variable x:TypeArguments="sd:DataView" Name="dataview" />
       <Variable x:TypeArguments="x:String" Name="phone_number" />
-      <Variable x:TypeArguments="x:Int32" Default="5" Name="AmountOfRows" />
+      <Variable x:TypeArguments="x:Int32" Name="AmountOfRows">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:Int32" Value="5" />
+        </Variable.Default>
+      </Variable>
     </ueab:SequenceX.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -160,13 +164,13 @@
         <x:Boolean x:Key="IsPinned">False</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Luodaan uusi pankkitili" sap:VirtualizedContainerService.HintSize="450,52" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="f4df5839-b973-4181-9c78-3c39312a7be9" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Luodaan uusi pankkitili" sap:VirtualizedContainerService.HintSize="1755.2,4388" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="f4df5839-b973-4181-9c78-3c39312a7be9" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,4167" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,4171.2" sap2010:WorkflowViewState.IdRef="Sequence_3">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="bankName" />
               <Variable x:TypeArguments="x:String" Name="personId" />
@@ -178,12 +182,12 @@
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NClick ClickType="Single" DisplayName="Click 'Generoi'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f4df5839-b973-4181-9c78-3c39312a7be9" Version="V3">
+            <uix:NClick ClickType="Single" DisplayName="Click 'Generoi'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f4df5839-b973-4181-9c78-3c39312a7be9" Version="V3">
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="https://www.telepartikkeli.net/tunnusgeneraattori" DesignTimeRectangle="51, 456, 100, 42" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'Generoi'" FullSelectorArgument="&lt;webctrl id='generateIbanSubmit' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='generateIbanSubmit' tag='INPUT' type='submit' class='btn btn-primary' aaname='Generoi' check:text='Generoi' /&gt;" Guid="4c386b25-0c68-4ada-b75c-0959f5ae213c" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGgAAAAuCAYAAADEHVzQAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAARjSURBVHhe7VtPaxtHHO1HMIWk7hcIhR7yEdqC78GHHuqTL22/gAktvhhDCCKXhVIKxehkBYz/oCLjUm1pGxei5FBkg7oYVyBiiYVGuMQyS7epzOu83Z39p/VabpA0MvPgHTTz29HqvZnf/EYwb0FDaWiDFIc2SHEMGLS5+yM++Phz3L47h7ff/1BzTKTe1J36x5Ew6IuHX+Hep1/CfPY7/v7n36BVYxyg3tSd+tMHidAgOsdOBtbrdSwsLGB2dhYzMzOaIyZ1pt7UnfrTB7mSQoO4vOggg27dfidzIM3RkrpTf/pAP4jQIOZAukcnGfzu3Y9w55MHeG/R0BwxqTP1pu7Unz7QDyI0iBsVIdOaNme8pN7UnfoT0o8BgxhEZg2iOVpK7QltkILUBilObZDi1AYpTm2Q4tQGKU5tkOIcq0Hz6w3UOg56r71hfVz04Z6foX54gEKhmPncNHPL9n9m89fs/qs4JoPKKB473lj5OMVW5vPTyykwqIiC5XrjAC7aYqWsGqWof6WMpc0DVK1T9C5unkFvytEbtNZC1xvFRW3jminMeIpqx4V74Q3gpcNe5wir9+NxDTTZZx9h6YcWmud9L5TodVswVuKxZBGrP9loO1EcnDPU9sqJOH9S8Z2/R/GQk8cPRacRxIiswPZYuu799RKV9djki4/zOGq7Dkdu0FLdT23u8dPM/ktpCOHje1Uc5ycohLGBQVLANOwGFsPY+GpOo4/mL9tBnBRWvHf6HcR4NGfLjhmcQHIiKm/QVocj9FH/Lrs/m9uo/Ok/17UOsBwUD3OFfVTEiiIsU4oQGCTA1WUE6XN+7Sgw+AwVueJ2bCGVgHOKymYZ897zJSybJ+gy9lULy15bZBBei9VlmliMr9q9l9E4G9uYY9uKiZLl+O2uDSMxjsoGeZtkxgs+PkHPGz2OYA969Afa/PjiwP/xcd4/Cvp+C9pkipOpJ+I3Tc7y6Lv9zw6erCXjSF9I0fdt/DNXw2CsP46YdDvpPjmxou+c3hWUZ1BmXwqhIZcblBZHVlSXYzhh/XGyCxr/uahqU96g4fagfdS8MG1QmiM3KFHF7SQrnIgpg4IU5zafZ8SmObxBfmo6Q/VRMi6LecLKFGftpavSKUxxycqpj/ZxA8bXwcYqOFfYFecgsaF7IXJWRkVCWxQJ0bmphM/Wn6MizkzNw/2gbXiDkkXCbrjx8x0MswXrlR2uilxhZZEgCojqtBcJPssovfBePR/ioFqSz+SV2QI9638YlFtmE1Hayhf2BpXZEYtY3GigZouDZ1x4Hj67Np6Y+8lSllz5GZVW6r87x0HTasT+t7uOQWRx4EAr36G6awal9zDC3pCDquabURukOLVBilMbpDi1QYpTG6Q4tUGKUxukOLVBinMog/T1k8nwyusn+gLX5Eidr7zApa9ATp65VyD1JeLJkTpTb+pO/TMvERP6Gv7kQL2pO/XPvIYvQee4vJgDuVFpjofUm7rLlSMxYJCGSgD+Awe/dxjaR7BGAAAAAElFTkSuQmCC" InformativeScreenshot="47519b4d6a3dc4a46dcf36974672a058.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Henkilötunnusgeneraattori, y-tunnusgeneraattori, IBAN-generaattori, luottokorttinumero-generaattori' /&gt;" SearchSteps="FuzzySelector, Image" Version="V2" Visibility="Interactive" />
               </uix:NClick.Target>
             </uix:NClick>
-            <uix:NGetText DisplayName="Get Text 'FI74 4723 3595 0003 75'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="f4df5839-b973-4181-9c78-3c39312a7be9" TextString="[ibanNumber]" Version="V3">
+            <uix:NGetText DisplayName="Get Text 'FI74 4723 3595 0003 75'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="f4df5839-b973-4181-9c78-3c39312a7be9" TextString="[ibanNumber]" Version="V3">
               <uix:NGetText.Target>
                 <uix:TargetAnchorable BrowserURL="https://www.telepartikkeli.net/tunnusgeneraattori" DesignTimeRectangle="612, 278, 267, 25" DesignTimeScaleFactor="1.25" FriendlyName="'FI74 4723 3595 0003 75'" FullSelectorArgument="&lt;webctrl id='results' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl id='results' tag='DIV' type='' class='' /&gt;" Guid="6a4961d7-bd9f-4a90-8967-1696e029bdfc" InformativeScreenshot="2d35a8f1ce1a5999f979724855463843.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Henkilötunnusgeneraattori, y-tunnusgeneraattori, IBAN-generaattori, luottokorttinumero-generaattori' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
               </uix:NGetText.Target>
@@ -287,28 +291,28 @@
       </uix:NApplicationCard.TargetApp>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-          <x:Boolean x:Key="IsPinned">True</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </uix:NApplicationCard>
-    <ui:GetLastDownloadedFile File="{x:Null}" FileResource="{x:Null}" IgnoreFiles="{x:Null}" Timeout="{x:Null}" DisplayName="Lataa ostolaskut" DownloadFolder="[System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), &quot;Downloads&quot;)]" sap:VirtualizedContainerService.HintSize="450,52" sap2010:WorkflowViewState.IdRef="GetLastDownloadedFile_1">
+    <ui:GetLastDownloadedFile File="{x:Null}" FileResource="{x:Null}" IgnoreFiles="{x:Null}" Timeout="{x:Null}" DisplayName="Lataa ostolaskut" DownloadFolder="[System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), &quot;Downloads&quot;)]" sap:VirtualizedContainerService.HintSize="1755.2,52.8" sap2010:WorkflowViewState.IdRef="GetLastDownloadedFile_1">
       <ui:GetLastDownloadedFile.Body>
         <ActivityAction>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="546,601" sap2010:WorkflowViewState.IdRef="Sequence_6">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="545.6,601.6" sap2010:WorkflowViewState.IdRef="Sequence_6">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Lappeenrannan kaupungin ostolaskut 2014-2021 - Tietoaineisto avoindata.fi" sap:VirtualizedContainerService.HintSize="484,490" sap2010:WorkflowViewState.IdRef="NApplicationCard_5" InteractionMode="DebuggerApi" ScopeGuid="717c7750-808a-433b-a854-dce1222721bc" Version="V2">
+            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Lappeenrannan kaupungin ostolaskut 2014-2021 - Tietoaineisto avoindata.fi" sap:VirtualizedContainerService.HintSize="483.2,489.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_5" InteractionMode="DebuggerApi" ScopeGuid="717c7750-808a-433b-a854-dce1222721bc" Version="V2">
               <uix:NApplicationCard.Body>
                 <ActivityAction x:TypeArguments="x:Object">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,273" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,272.8" sap2010:WorkflowViewState.IdRef="Sequence_7">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -342,13 +346,13 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:GetLastDownloadedFile>
-    <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Ostolasku datan siistiminen" sap:VirtualizedContainerService.HintSize="450,52" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_2">
+    <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Ostolasku datan siistiminen" sap:VirtualizedContainerService.HintSize="1755.2,52.8" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_2">
       <ueab:ExcelProcessScopeX.Body>
         <ActivityAction x:TypeArguments="ui:IExcelProcess">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="688,2259" sap2010:WorkflowViewState.IdRef="Sequence_15">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="688,2260.8" sap2010:WorkflowViewState.IdRef="Sequence_15">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="variable1" />
             </Sequence.Variables>
@@ -357,7 +361,7 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Assign sap:VirtualizedContainerService.HintSize="626,82" sap2010:WorkflowViewState.IdRef="Assign_1">
+            <Assign sap:VirtualizedContainerService.HintSize="625.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_1">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:String">[DateFilter]</OutArgument>
               </Assign.To>
@@ -365,7 +369,7 @@
                 <InArgument x:TypeArguments="x:String">[New System.Random().Next(1,13).ToString("00")]</InArgument>
               </Assign.Value>
             </Assign>
-            <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="626,90" sap2010:WorkflowViewState.IdRef="WriteLine_7" Text="[DateFilter]" />
+            <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="625.6,90.4" sap2010:WorkflowViewState.IdRef="WriteLine_7" Text="[DateFilter]" />
             <ueab:ExcelApplicationCard Password="{x:Null}" CreateNewFile="False" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="625.6,1896.8" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_2" ReadFormatting="RawValue" ResizeWindow="None" WorkbookPath="[System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), &quot;Downloads/lappeenrannan-kaupungin-ostolaskut-2021.xlsx&quot;)]">
               <ueab:ExcelApplicationCard.Body>
                 <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
@@ -419,7 +423,7 @@
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_2">
+                            <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_2">
                               <Assign.To>
                                 <OutArgument x:TypeArguments="x:Object">[CurrentRow.Item("Tositepäivä")]</OutArgument>
                               </Assign.To>
@@ -473,7 +477,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ueab:ExcelProcessScopeX>
-    <Sequence DisplayName="Lisätietojen kysyminen käyttäjältä" sap:VirtualizedContainerService.HintSize="450,81" sap2010:WorkflowViewState.IdRef="Sequence_20">
+    <Sequence DisplayName="Lisätietojen kysyminen käyttäjältä" sap:VirtualizedContainerService.HintSize="1755.2,83.2" sap2010:WorkflowViewState.IdRef="Sequence_20">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -491,25 +495,25 @@
         </ui:InputDialog.Result>
       </ui:InputDialog>
     </Sequence>
-    <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="450,52" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_3">
+    <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="1755.2,2174.4" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_3">
       <ueab:ExcelProcessScopeX.Body>
         <ActivityAction x:TypeArguments="ui:IExcelProcess">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="688,2083" sap2010:WorkflowViewState.IdRef="Sequence_22">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="688,2088" sap2010:WorkflowViewState.IdRef="Sequence_22">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="625.6,1972" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_3" ResizeWindow="None" WorkbookPath="[System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), &quot;Downloads/lappeenrannan-kaupungin-ostolaskut-2021.xlsx&quot;)]">
+            <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="625.6,1976" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_3" ResizeWindow="None" WorkbookPath="[System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), &quot;Downloads/lappeenrannan-kaupungin-ostolaskut-2021.xlsx&quot;)]">
               <ueab:ExcelApplicationCard.Body>
                 <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="OstoExcel" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="592,1703.2" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="592,1706.4" sap2010:WorkflowViewState.IdRef="Sequence_21">
                     <Sequence.Variables>
                       <Variable x:TypeArguments="x:String" Name="variable1" />
                       <Variable x:TypeArguments="x:String" Name="variable2" />
@@ -562,7 +566,7 @@
                         </ActivityAction>
                       </ui:ForEachRow.Body>
                     </ui:ForEachRow>
-                    <ui:FilterDataTable DataTable="[OstolaskutValmiit]" DisplayName="Filter Data Table" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="530,161" sap2010:WorkflowViewState.IdRef="FilterDataTable_4" OutputDataTable="[OstolaskutValmiit]" SelectColumnsMode="Keep">
+                    <ui:FilterDataTable DataTable="[OstolaskutValmiit]" DisplayName="Filter Data Table" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="529.6,162.4" sap2010:WorkflowViewState.IdRef="FilterDataTable_4" OutputDataTable="[OstolaskutValmiit]" SelectColumnsMode="Keep">
                       <ui:FilterDataTable.Filters>
                         <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
                           <ui:FilterOperationArgument BooleanOperator="And" Operator="GTE">
@@ -581,7 +585,7 @@
                         </scg:List>
                       </ui:FilterDataTable.SelectColumns>
                     </ui:FilterDataTable>
-                    <Assign sap:VirtualizedContainerService.HintSize="530,82" sap2010:WorkflowViewState.IdRef="Assign_3">
+                    <Assign sap:VirtualizedContainerService.HintSize="529.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_3">
                       <Assign.To>
                         <OutArgument x:TypeArguments="sd:DataTable">[Oslaskut]</OutArgument>
                       </Assign.To>
@@ -589,8 +593,8 @@
                         <InArgument x:TypeArguments="sd:DataTable">[OstolaskutValmiit.AsEnumerable().Take(5).CopyToDataTable()]</InArgument>
                       </Assign.Value>
                     </Assign>
-                    <ui:OutputDataTable DataTable="[Oslaskut]" DisplayName="Output Data Table" sap:VirtualizedContainerService.HintSize="530,80" sap2010:WorkflowViewState.IdRef="OutputDataTable_4" Text="[StringOstolaskut]" />
-                    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="530,90" sap2010:WorkflowViewState.IdRef="WriteLine_15" Text="[StringOstolaskut]" />
+                    <ui:OutputDataTable DataTable="[Oslaskut]" DisplayName="Output Data Table" sap:VirtualizedContainerService.HintSize="529.6,80.8" sap2010:WorkflowViewState.IdRef="OutputDataTable_4" Text="[StringOstolaskut]" />
+                    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="529.6,90.4" sap2010:WorkflowViewState.IdRef="WriteLine_15" Text="[StringOstolaskut]" />
                   </Sequence>
                 </ActivityAction>
               </ueab:ExcelApplicationCard.Body>
@@ -600,12 +604,12 @@
       </ueab:ExcelProcessScopeX.Body>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-          <x:Boolean x:Key="IsPinned">True</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ueab:ExcelProcessScopeX>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="450,52" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Trace" Message="[&quot;Ostolaskudata siivottu ja 20 laskua valittu&quot;]">
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1755.2,52.8" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Trace" Message="[&quot;Ostolaskudata siivottu ja 20 laskua valittu&quot;]">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -613,26 +617,26 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:LogMessage>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Puhelinnumeron hakeminen" sap:VirtualizedContainerService.HintSize="450,52" sap2010:WorkflowViewState.IdRef="NApplicationCard_7" InteractionMode="DebuggerApi" ScopeGuid="d4fb6984-1276-46ff-991d-09d6e7fd9338" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Puhelinnumeron hakeminen" sap:VirtualizedContainerService.HintSize="1755.2,2120.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_7" InteractionMode="DebuggerApi" ScopeGuid="d4fb6984-1276-46ff-991d-09d6e7fd9338" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1723,1899" sap2010:WorkflowViewState.IdRef="Sequence_27">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1721.6,1904" sap2010:WorkflowViewState.IdRef="Sequence_27">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:AddDataColumn x:TypeArguments="x:String" AutoIncrement="{x:Null}" Column="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" AllowDBNull="True" ColumnName="PuhelinNro" DataTable="[Oslaskut]" DefaultValue="1234567" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="1661,186" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_11" />
-            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[Oslaskut]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="1660.8,1558.4" sap2010:WorkflowViewState.IdRef="ForEachRow_4">
+            <ui:AddDataColumn x:TypeArguments="x:String" AutoIncrement="{x:Null}" Column="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" AllowDBNull="True" ColumnName="PuhelinNro" DataTable="[Oslaskut]" DefaultValue="1234567" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="1659.2,188" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_11" />
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[Oslaskut]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="1659.2,1560.8" sap2010:WorkflowViewState.IdRef="ForEachRow_4">
               <ui:ForEachRow.Body>
                 <ActivityAction x:TypeArguments="sd:DataRow">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1627.2,1440.8" sap2010:WorkflowViewState.IdRef="Sequence_26">
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1625.6,1443.2" sap2010:WorkflowViewState.IdRef="Sequence_26">
                     <Sequence.Variables>
                       <Variable x:TypeArguments="x:String" Name="phone" />
                       <Variable x:TypeArguments="x:Boolean" Name="VirreError" />
@@ -642,7 +646,7 @@
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT criteriaText'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="1564.8,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_15" ScopeIdentifier="d4fb6984-1276-46ff-991d-09d6e7fd9338" Text="[CurrentRow.Item(5).toString() + &quot;[k(Enter)]&quot;]" Version="V3">
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT criteriaText'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="1563.2,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_15" ScopeIdentifier="d4fb6984-1276-46ff-991d-09d6e7fd9338" Text="[CurrentRow.Item(5).toString() + &quot;[k(Enter)]&quot;]" Version="V3">
                       <uix:NTypeInto.Target>
                         <uix:TargetAnchorable BrowserURL="https://virre.prh.fi/novus/home?execution=e1s1" DesignTimeRectangle="565, 585, 638, 50" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'INPUT criteriaText'" FullSelectorArgument="&lt;webctrl id='criteriaText' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='criteriaText' tag='INPUT' type='text' class='form-control' aaname='Kirjoita yrityksen nimi, nimen osa, Y-tunnus tai diaarinumero' /&gt;" Guid="cbff4136-bd4e-4097-b887-4edb6cc46bb6" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAoIAAAA2CAYAAABTNPhfAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAEoSURBVHhe7daxDYMwAABBpKzJftTeig1cUJAOKVLEAP4rbofbznndAAD0iCAAQJQIAgBEPREcYwAAsLjPfjx+IjjnBABgUSIIABAlggAAUSIIABAlggAAUSIIABAlggAAUSIIABAlggAAUSIIABAlggAAUSIIABAlggAAUSIIABAlggAAUSIIABAlggAAUSIIABAlggAAUSIIABAlggAAUSIIABAlggAAUSIIABAlggAAUSIIABAlggAAUSIIABAlggAAUSIIABAlggAAUSIIABAlggAAUSIIABAlggAAUSIIABAlggAAUSIIABAlggAAUSIIABAlggAAUSIIABAlggAAUSIIABAlggAAUSIIABAlggAAUSIIABD1GkEAANb2N4IAAJRc9xfCoQ+WoOvNZAAAAABJRU5ErkJggg==" InformativeScreenshot="d20f6dcba22f490b28b9e2e5af3927b1.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Tervetuloa Virre-tietopalveluun! - Virre-tietopalvelu | PRH' /&gt;" SearchSteps="FuzzySelector, Image" Version="V2" Visibility="Interactive">
                           <uix:TargetAnchorable.Anchors>
@@ -653,7 +657,7 @@
                         </uix:TargetAnchorable>
                       </uix:NTypeInto.Target>
                     </uix:NTypeInto>
-                    <uix:NCheckState DisplayName="Check App State 'Y-tunnusta ei löydy.'" sap:VirtualizedContainerService.HintSize="1564.8,944.8" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="d4fb6984-1276-46ff-991d-09d6e7fd9338" Timeout="2" Version="V3">
+                    <uix:NCheckState DisplayName="Check App State 'Y-tunnusta ei löydy.'" sap:VirtualizedContainerService.HintSize="1563.2,947.2" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="d4fb6984-1276-46ff-991d-09d6e7fd9338" Timeout="2" Version="V3">
                       <uix:NCheckState.IfExists>
                         <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="449.6,106.4" sap2010:WorkflowViewState.IdRef="Sequence_31">
                           <sap:WorkflowViewStateService.ViewState>
@@ -665,21 +669,21 @@
                         </Sequence>
                       </uix:NCheckState.IfExists>
                       <uix:NCheckState.IfNotExists>
-                        <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="1062.4,726.4" sap2010:WorkflowViewState.IdRef="Sequence_32">
+                        <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="1060.8,728.8" sap2010:WorkflowViewState.IdRef="Sequence_32">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <uix:NCheckState DisplayName="Check App State 'Puhelin'" sap:VirtualizedContainerService.HintSize="1000,611" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="d4fb6984-1276-46ff-991d-09d6e7fd9338" Timeout="0" Version="V3">
+                          <uix:NCheckState DisplayName="Check App State 'Puhelin'" sap:VirtualizedContainerService.HintSize="998.4,613.6" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="d4fb6984-1276-46ff-991d-09d6e7fd9338" Timeout="0" Version="V3">
                             <uix:NCheckState.IfExists>
-                              <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="496,394" sap2010:WorkflowViewState.IdRef="Sequence_33">
+                              <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="496,395.2" sap2010:WorkflowViewState.IdRef="Sequence_33">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
-                                <uix:NGetText DisplayName="Get Text 'Puhelin'" sap:VirtualizedContainerService.HintSize="434,157" sap2010:WorkflowViewState.IdRef="NGetText_6" ScopeIdentifier="d4fb6984-1276-46ff-991d-09d6e7fd9338" TextString="[phone]" Version="V3">
+                                <uix:NGetText DisplayName="Get Text 'Puhelin'" sap:VirtualizedContainerService.HintSize="433.6,157.6" sap2010:WorkflowViewState.IdRef="NGetText_6" ScopeIdentifier="d4fb6984-1276-46ff-991d-09d6e7fd9338" TextString="[phone]" Version="V3">
                                   <uix:NGetText.Target>
                                     <uix:TargetAnchorable BrowserURL="https://virre.prh.fi/novus/home?execution=e1s5" DesignTimeRectangle="857, 603, 218, 45" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'0400 255835'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl isleaf='1' tableRow='23' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl isleaf='1' type='' tag='TD' class='' /&gt;" Guid="2fff8dd6-8939-42a0-b3ca-4c2e22fe6cd2" InformativeScreenshot="5bbaf60f4bd689823ca142fa9a6886f5.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Yrityksen tiedot - Yrityksen perustiedot - Virre-tietopalvelu | PRH' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
                                       <uix:TargetAnchorable.Anchors>
@@ -690,7 +694,7 @@
                                     </uix:TargetAnchorable>
                                   </uix:NGetText.Target>
                                 </uix:NGetText>
-                                <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_5">
+                                <Assign sap:VirtualizedContainerService.HintSize="433.6,82.4" sap2010:WorkflowViewState.IdRef="Assign_5">
                                   <Assign.To>
                                     <OutArgument x:TypeArguments="x:Object">[CurrentRow.Item("PuhelinNro")]</OutArgument>
                                   </Assign.To>
@@ -701,7 +705,7 @@
                               </Sequence>
                             </uix:NCheckState.IfExists>
                             <uix:NCheckState.IfNotExists>
-                              <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,105" sap2010:WorkflowViewState.IdRef="Sequence_34">
+                              <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="449.6,106.4" sap2010:WorkflowViewState.IdRef="Sequence_34">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -732,12 +736,12 @@
       </uix:NApplicationCard.TargetApp>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-          <x:Boolean x:Key="IsPinned">True</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </uix:NApplicationCard>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="450,52" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Trace" Message="[&quot;Puhelinumerot haettu yrityksille&quot;]">
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1755.2,52.8" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Trace" Message="[&quot;Puhelinumerot haettu yrityksille&quot;]">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -745,13 +749,13 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:LogMessage>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Toimittajatietojen syöttäminen Netvisoriin" sap:VirtualizedContainerService.HintSize="450,52" sap2010:WorkflowViewState.IdRef="NApplicationCard_6" InteractionMode="DebuggerApi" ScopeGuid="f4df5839-b973-4181-9c78-3c39312a7be9" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Toimittajatietojen syöttäminen Netvisoriin" sap:VirtualizedContainerService.HintSize="1755.2,2671.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_6" InteractionMode="DebuggerApi" ScopeGuid="f4df5839-b973-4181-9c78-3c39312a7be9" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="545,2450" sap2010:WorkflowViewState.IdRef="Sequence_24">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="545.6,2454.4" sap2010:WorkflowViewState.IdRef="Sequence_24">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="bankName" />
               <Variable x:TypeArguments="x:String" Name="personId" />
@@ -764,7 +768,7 @@
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uas:GetUsernamePasswordX OrchestratorCredentialName="{x:Null}" TimeoutInSeconds="{x:Null}" AutosubmitTimeoutSeconds="10" Credential="[credentials]" CredentialName="UiPath: https://koulutus.netvisor.fi/tableui/login/login.asp" CredentialsSource="CredentialsManager" DisplayName="Get Username/Password" sap:VirtualizedContainerService.HintSize="483,171" sap2010:WorkflowViewState.IdRef="GetUsernamePasswordX_2" />
+            <uas:GetUsernamePasswordX OrchestratorCredentialName="{x:Null}" TimeoutInSeconds="{x:Null}" AutosubmitTimeoutSeconds="10" Credential="[credentials]" CredentialName="UiPath: https://koulutus.netvisor.fi/tableui/login/login.asp" CredentialsSource="CredentialsManager" DisplayName="Get Username/Password" sap:VirtualizedContainerService.HintSize="483.2,174.4" sap2010:WorkflowViewState.IdRef="GetUsernamePasswordX_2" />
             <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'LUT9.Robert.Opiskelija'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="483.2,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_9" ScopeIdentifier="f4df5839-b973-4181-9c78-3c39312a7be9" Text="[credentials.Username]" Version="V3">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable BrowserURL="https://koulutus.netvisor.fi/tableui/login/login.asp" DesignTimeRectangle="525, 485, 275, 37" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'LUT9.Robert.Opiskelija'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='username' tableRow='2' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='username' type='text' tag='INPUT' class='' aaname='' /&gt;" Guid="7311d30b-07fe-429e-a967-1a67bd1d3225" ImageBase64="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" InformativeScreenshot="942cff07946a6f281c83f86cf948d058.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Netvisor' /&gt;" SearchSteps="FuzzySelector, Image" Version="V2" Visibility="Interactive" />
@@ -862,12 +866,12 @@
       </uix:NApplicationCard.TargetApp>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-          <x:Boolean x:Key="IsPinned">True</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </uix:NApplicationCard>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="450,52" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Trace" Message="[&quot;Toimittajatiedot syötetty Netvisoriin&quot;]">
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1755.2,52.8" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Trace" Message="[&quot;Toimittajatiedot syötetty Netvisoriin&quot;]">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -875,5 +879,113 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:LogMessage>
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="1755.2,2602.4" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+      <ui:CommentOut.Body>
+        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="641.6,2524" sap2010:WorkflowViewState.IdRef="Sequence_37">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Netvisor" sap:VirtualizedContainerService.HintSize="579.2,2412" sap2010:WorkflowViewState.IdRef="NApplicationCard_8" InteractionMode="DebuggerApi" ScopeGuid="8142697a-1374-4e90-8df3-5a8b7b2aa160" Version="V2">
+            <uix:NApplicationCard.Body>
+              <ActivityAction x:TypeArguments="x:Object">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                </ActivityAction.Argument>
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="545.6,2195.2" sap2010:WorkflowViewState.IdRef="Sequence_36">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uas:GetUsernamePasswordX OrchestratorCredentialName="{x:Null}" TimeoutInSeconds="{x:Null}" AutosubmitTimeoutSeconds="10" Credential="[credentials]" CredentialName="UiPath: https://koulutus.netvisor.fi/tableui/login/login.asp" CredentialsSource="CredentialsManager" DisplayName="Get Username/Password" sap:VirtualizedContainerService.HintSize="483.2,174.4" sap2010:WorkflowViewState.IdRef="GetUsernamePasswordX_3" />
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'LUT9.Robert.Opiskelija'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="483.2,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_17" ScopeIdentifier="8142697a-1374-4e90-8df3-5a8b7b2aa160" Text="[credentials.Username]" Version="V3">
+                    <uix:NTypeInto.Target>
+                      <uix:TargetAnchorable BrowserURL="https://koulutus.netvisor.fi/tableui/login/login.asp" DesignTimeRectangle="525, 485, 275, 37" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'LUT9.Robert.Opiskelija'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='username' tableRow='2' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='username' type='text' tag='INPUT' class='' aaname='' /&gt;" Guid="7311d30b-07fe-429e-a967-1a67bd1d3225" ImageBase64="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" InformativeScreenshot="942cff07946a6f281c83f86cf948d058.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Netvisor' /&gt;" SearchSteps="FuzzySelector, Image" Version="V2" Visibility="Interactive" />
+                    </uix:NTypeInto.Target>
+                  </uix:NTypeInto>
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Salasana'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="483.2,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_18" ScopeIdentifier="8142697a-1374-4e90-8df3-5a8b7b2aa160" Text="[credentials.Password]" Version="V3">
+                    <uix:NTypeInto.Target>
+                      <uix:TargetAnchorable BrowserURL="https://koulutus.netvisor.fi/tableui/login/login.asp" DesignTimeRectangle="525, 535, 275, 37" DesignTimeScaleFactor="1.25" ElementType="InputBoxPassword" FriendlyName="'Robotti23'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='userpass' tableRow='3' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='userpass' type='password' tag='INPUT' class='' aaname='' /&gt;" Guid="c299d43b-d9e9-4379-bd1a-10335c1b643d" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAARcAAAApCAYAAAAf1G29AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKASURBVHhe7d2/blJhGMfxcxWVqUMTBwYHr8G4dDKkN+BoTFy6GBc3jXMTr8AmXIAbozEaFcGmaIEgUP4UKaV/Yqyp2keek3BygPe8KPTZvr/ks7ztaejyzTksJxDGGDMYcWGMmWwmLoeDoZT2KvL2Q0HevP8IAE7aCG2FNsO1ibg0Wm0plqqyV+/Ll8ZAys0hADhpI7QVhd1K2I7pRXHR+hRHv1TZP5b6wXdp9n7I/rdzafV/AsAEbYM2QluhzSjsVmfuYKK46O1NeVQivaBz9EsOjv8AgJe2Qpuh7dCGxBfFRZ+fap1T6Q5/S+/kEgD+iTbja/csbEh8UVz0Cxq93dEauf4AALhoM7Qd2pD4JuLSHlw4LwYAH22HNy76/OS6EAB8tB3EBcCVIy4ATBAXACaICwATxAWACeICwARxAWCCuAAwsXxcOnl5upGWlSAl1ze2JNcZ/6wm2w/WZTUIZPX2pmzvzDu/lHfZTbm1Fkiwti73srW5581XW5JJpyS4lpbMs7w055wnftbE/wHAopaOS+7JTQlGoRhbefQ6PC9n70+cB3deyI7nvNd8KXfj50FGnn/2nJ/k5fGN+HlKHuZ858mfNekcwOKIi+ccwOKWjguPRQBclo8LADgQFwAmiAsAE8QFgAniAsAEcQFggrgAMEFcAJggLgBMEBcAJogLABPEBYAJb1z0Pa+t/rnzQgDw0XYkvita31Bf7546LwQAH22HNiS+KC6Hg6F8KlV5ET2A/6LNKI7aoQ2JL4qLrtFqh7/UODiT7pDvXwAk6x5dhK0ImzFqx/Qm4qLT+ujtjT4/6Rc0AOCijdBWTN+xjDcTF8YYu4oRF8aYwUT+AixlZwO2EL4yAAAAAElFTkSuQmCC" InformativeScreenshot="45801b0bcd9f174570673333c8878555.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Netvisor' /&gt;" SearchSteps="FuzzySelector, Image" Version="V2" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target DesignTimeRectangle="326, 530, 176, 50" ElementType="Text" FriendlyName="'Salasana'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='3' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='TD' class='borderleft' aaname=' &amp;#x9;                        Salasana: &amp;#x9;                    ' check:innerText='Salasana:' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAALQAAAA2CAYAAAButbPhAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAVLSURBVHhe7ZpdayJJFIb3L+ciN7nIjTdhaDLIsAmJwXzJIJEWmiAjoySghLhIIw6b2RDCNCQjE9lIggwyYuTsqa4qP1pjrIF1szXvA02wLKst+vH0W9X5jZjzv27EHwD+90BoYBUQGlgFhAZWAaGBVUBoYBUQGlgFhAZWAaGBVUBoYBUQGlgFhAZWAaGBVUBoYBUQGlgFhAZWAaGBVUDoRfIY0OlRhlbXE7T0Rh4r7zK0Wwqo3Vd9fop7KmzxeFtndKdaflUg9ILoXZ5QzFES73h06Ob58Mh5q+ROlCj4oTobA6E1EHohNMj7nYVz0lRoqKYBHQo+pKXoXqDaTIHQGgi9CL6d0ZqowkeXqiFC/5rSolI7Oar/VPSA0BoIvQi00Ac1rsfT8dP8/nqWyn+rBkH3nvzjLK3Fk4PMvbS+T85RlYLvqk/IM0LrzK5jDR/Lb1MUP76gVuSH076q0u5OkpZf6Df3mGrOu/Unavn5YbRykuS43Ler+mnmnutsIPRCUJGDL9LqQYn8Lw/Ue6kS9wNy34nP8EV1z6jiX5B/fkaHyX15sZNVaquuU4Vu1WhDZHYnRRv5Kvni86USbYt+/PnReNP7M08r3La8laPCOffzq+Tq86Q+DX+EBmNqodcSHKc4au0Wa+Pjjn5/o7ky9Zxsn3LHg9CLolEhRy0Kw4Mr1epmlg6LFxRMlCuWrJ4Pd0Oc0oNq0XSociDG4Dw+qOaTQt+dZGiFz5H+rBo0/Rspj5Mn/VZ4d3iTI3/sR8bnSbHk8RxVlE0mYw7uShPrhgc63RHny1D5UbaYzZWB0K8Evq3Wi7nh7XfkWN7Kkz960WZwVxSLSL7I31SDYYauH4lzcl5Xr6XQaXKvxuqgEdExB0Jzhe+pJs3dx1Tk+z/P5FxnA6H/I3rf7yn4VCUvJaqekIGPOFe46NZdt0Pt24Bv1zUqHOdpe2eflsP+cwr9o0OtL5fh7d5zcxTf1Dl5KJ+OHOF3WOc8LG77l83nY9EcY2qhp+3cSEm50kcL7FxznQ2Efg10G5RLSKHiZV0lOxQUs7QaiSlre3lKp0S2fEHo/gP5bnqwyJOyckZNlWg3KV6PyMd0bmvk7qWUQOpw9mmjeDPM0CZj6gxdvFcNQ6TQYsGoGozmOhsI/a/zRPWMWLkPM+NUghKtigupcmG7nJEXNlGg+m2bOiMxO/jwstBXnlxQrbyvUtDsjFTbbpiNo0IP6HfD6nt6PBRsuypPbjSmgdBmc50NhF4AX/MiM05b9IzwuRDe9mMfm/yiTeWw4qUoN/EgRsszS+hA7muzYOMLPUGDvHBHQct3zQs6jgzRnQSBWnxJKU3GZOYW2nSus4HQi6BVpbiodrzi96YtvB4D8sLIoS+cvpD75F6HPQZ0LgsUYxnEe8N4GhVaC5alSmQPt1XKcrt4z6NKmNe75L8Xr9MTQnXOZV8Zg0zGZOYW2nSus4HQC6IjtqbULTx8EHEk/pdjdOHDebUsqrOkx9UxXKjFM+SW5N6wl5L51dmJZtDJyKGlWdpUe8t6X5dzsZOI3MYbZ3JLcbBffMGRIyO/b7xAV6oiG41pEDnM5spg2+6V8NigyrSnYbyo8ptPqtOQVm38CVts70T2U3k7ltcldcqiMFxoeRTT/9nHnxdP3a44x/f+8MI2nY0FveYFpQc/Lj7Ebod4+je2RW4wptGi0GSuDIQGvwoQGlgFhAZWAaGBVUBoYBUQGlgFhAZWAaGBVUBoYBUQGlgFhAZWAaGBVUBoYBUQGlgFhAZWAaGBVUBoYBUQGlgFhAZWAaGBVUBoYBUQGlgE0T8dp+6ZR0Sk6QAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NTypeInto.Target>
+                  </uix:NTypeInto>
+                  <uix:NGoToUrl DisplayName="Go To URL" sap:VirtualizedContainerService.HintSize="483.2,82.4" sap2010:WorkflowViewState.IdRef="NGoToUrl_10" Url="https://koulutus.netvisor.fi/evo/accounting/purchaseinvoice/invoice.aspx?page_transaction=446264" Version="V3" />
+                  <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[Ostolaskut]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="483.2,1226.4" sap2010:WorkflowViewState.IdRef="ForEachRow_5">
+                    <ui:ForEachRow.Body>
+                      <ActivityAction x:TypeArguments="sd:DataRow">
+                        <ActivityAction.Argument>
+                          <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                        </ActivityAction.Argument>
+                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="449.6,1108.8" sap2010:WorkflowViewState.IdRef="Sequence_35">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Laskun numero'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="387.2,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_19" ScopeIdentifier="8142697a-1374-4e90-8df3-5a8b7b2aa160" Text="[CurrentRow.Item(3).toString]" Version="V3">
+                            <uix:NTypeInto.Target>
+                              <uix:TargetAnchorable BrowserURL="https://koulutus.netvisor.fi/evo/accounting/purchaseinvoice/editinvoice.aspx?page_transaction=446264" DesignTimeRectangle="651, 324, 309, 30" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'INPUT invoicenumber'" FullSelectorArgument="&lt;webctrl id='iframe_1679989315916' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='invoicenumber' tableRow='1' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='iframe_1679989315916' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='invoicenumber' type='text' tag='INPUT' class='input--text width--full' aaname='' /&gt;" Guid="4d6b05c2-38a0-4557-aedd-c52820d29ae9" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAATkAAAAiCAYAAAAkh64dAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAFBSURBVHhe7d1BisJQEEXR3v/aBKdZgU6UCAoqiiWv0YC0vYBfnANvkOj4kln9FEBjIge09hG5w+FQ0zTVarUyMxtyaVha9rZELi/X63VtNpva7/c1z7OZ2VBLu9KwtOwduiVyqd92u63j8Vjn87kul0tdr1czsyGWZqVdp9Ppt2VpWiyRy2defrzdbvV4PMzMhlwalo+1NC0+Ipca5k8Ao0rD8lX3NXIpIMDo0rKvkbvf768ngHGlZSIHtCVyQGsiB7QmckBrIge0JnJAayIHtCZyQGsiB7QmckBrIge0JnJAayIHtCZyQGsiB7QmckBrIge0JnJAayIHtPZv5ByyATr4esgmh1h3u93rCWBcadmf49I5qZ/T+jmz7/YqMKK0Kw1Ly9K0WCIXeZn65TPPzGzEpWHvwMVH5AC6ETmgsaonWQjFZ9NUzSQAAAAASUVORK5CYII=" InformativeScreenshot="91a960edf71354c9a8abad2ef8d7e8e5.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Netvisor :: Ostolasku' /&gt;" SearchSteps="FuzzySelector, Image" Version="V2" Visibility="Interactive">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                    <uix:Target DesignTimeRectangle="424, 318, 218, 42" ElementType="Text" FriendlyName="'Laskun numero'" FullSelectorArgument="&lt;webctrl id='iframe_1679989315916' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl id='iframe_1679989315916' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='TD' class='text__emp width__per--20 required' aaname='Laskun numero' check:innerText='Laskun numero' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAN4AAAAuCAYAAABH9aeuAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAL0SURBVHhe7Zi9TuQwEIDvDe8hrqJEQjS8AA31igqJkna1FS0lSOwDbInYt/DFiccZ/2TZzcmeK75PGq0SO56Jb74k3C8HAN2J4h0OB4IgOkUiHgC0RTxDPICOIB6AAYgHYADiARiAeAAGIB6AAYgHYADiARiAeAAGIB6AAYgHYADiARiAeAAGIB6AAavF22+u3e8/1+7xI5xoRK88AD1BPAADEA/AgObiybw5ntw+jI18PGXj9273HcYG8jzH7X2YN60jx7fb4zTBI2tuQqbvV3frj+9e3THJl+ZK2bvHcc6QR64Poe+5tg9pTUe3uwtztnqdsA+6Hqk3IjWE8PWHEV3fLtuTcTTb92R/oA9fX87d3Ey/GU3FmyXJQhqskE6ibKAxT5w/j18kXi2SZtZkTZ/EQn2BJfHOiXmdhfyx3sr4OHYiXyE2NOH93bm3N+c+PwezBrX8rz/25wPN33gJIoQ0Ty5IhZhnI9Klb6lLxYv1ViROmRs7rh3XmWu4SLzKA0euk3UkV3xoqb1Jc1Xq88S11T5V6oaGPDw4d3Xl3MvLJJ7/9cf+fKCPeKrRxjj11M4klDxzpKJcJp6+VnL/JJ5uVpFonXhxTqWe/D7K+55jmlOrb2E/BmS9/Dw04vl5kk7CHyuailc0gQhRfN7lApaNrUM3j+TQwhbnpNGTvOeKp8eXxdM1pedOiKfqWS9eWj/i/QfYvvHKJ3IUohBvJm+QNM85a1Y+7TqIN4sv18k9rBMv3pd6oKQs1M+npj09/sarh28GJUAeoeFicxVRNnZs2vwzMv+M1dFBvOV7+Dfx5vx5SO6l+k/s+6LE0ISW/6tZj9AM8UnrwzdM2bg1cfRbtBCv0shp8w+5czkbiudJ9mLIsU8kWiueJ5dP5z1df/7vk64L1qwWDwDWg3gABiAegAGIB2AA4gEYgHgABiAegAGIB2AA4gEYgHgABiAegAGIB2AA4gEYgHgABiAegAGIB2BAVTyCIPoEbzyAjkyeOfcXMenDxUrDjIQAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:NTypeInto.Target>
+                          </uix:NTypeInto>
+                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Toimittaja'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="387.2,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_20" ScopeIdentifier="8142697a-1374-4e90-8df3-5a8b7b2aa160" Text="[CurrentRow.item(6).toString]" Version="V3">
+                            <uix:NTypeInto.Target>
+                              <uix:TargetAnchorable BrowserURL="https://koulutus.netvisor.fi/evo/accounting/purchaseinvoice/editinvoice.aspx?page_transaction=446264" DesignTimeRectangle="651, 366, 205, 30" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'INPUT distributername'" FullSelectorArgument="&lt;webctrl id='iframe_1679991611352' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='distributername' tableRow='2' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='iframe_1679991611352' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='distributername' type='text' tag='INPUT' class='input--text width--full' aaname='' /&gt;" Guid="d4998bf0-369e-412a-b1ce-44ef5f7a9a05" ImageBase64="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" InformativeScreenshot="4650027a3401661595ea77c648ee4d1a.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Netvisor :: Ostolasku' /&gt;" SearchSteps="FuzzySelector, Image" Version="V2" Visibility="Interactive">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                    <uix:Target DesignTimeRectangle="424, 360, 218, 42" ElementType="Text" FriendlyName="'Toimittaja'" FullSelectorArgument="&lt;webctrl id='iframe_1679991611352' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='2' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl id='iframe_1679991611352' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='TD' class='text__emp required' aaname='Toimittaja' check:innerText='Toimittaja' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAN4AAAAuCAYAAABH9aeuAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAONSURBVHhe7Z29axRBGIfPv9DaWpuIjRBBS20sJCKCIHZJZVLaWXtY6IEn2OTjgoLpRGz8ismO81vvXWbfm83XZfYgPg+8N7vv7s7swTz3zl1yySBMmUwm0y0AKIU8q6oQEA+gR3Z2MuIRBFEuJF0dcZuKB9ADqnIKSRcbxAPog5Z4sUU8gMKYdLV4eo8Xc4gHUJhGvLitincYNxAPoDAmXV3xomcHiAdQnlS87bjUPIglD/EAClJL58WLLeIBFKKRziLmtie7YT+ah3gAhUiFU6sPVVTx9g+peADF6BLvNxUPoBxePH2oUi81qXgA5WiJFwPxAHqgEW8qn8Tb2tllqQlQknMV7/mLl+Hy1Zudce3WvfDl67fp2XmsD7VnRWNorJOMd1rs/h48XZ1mAE7PjHjxQeL9+nMBxXs9ej8jTC53FIgH50FOvM3tydnES9mcfAxXbtwJt+8/Dt9//JxmF0dOGCSC3tnbC2F5OVSf9/Lizfser0s8y2vCK3xV8hVPFUn76ufuo2fNdTqufpXXvvpU38JXPOvTQuc+WV2fyen6tE+L9DnkZLV7TEM5gIbRKIThMITxOITBIFTvxqF6NQzV21F58XITVJFK0yXeScLGmkc8CZXmLex+vHj2PP35/gUF/nNWVkJYWgphY+OfeOsboVq6HqqVh2XFSytJWi1soluuSzwTI+3H+raxbLJ78YQXRuRyHn/OcdfY2Ha/AA1ra7V0tXiDS6FaXSu/1MzJILw0NrHVChPP+hGa9Ok5vu/cWDlhjpLIjlkcJ56NaecjHrRYVMXLySDmEU/HhO87N1ZOmFzO9+3P8ftdzxPxoMWi3uMptN010f3EVivOSzzrJx3b5/yLgOi6P9u343a/1gfiQZZFfKppE91HOklLi5eO53Nvxh/qayyXRpd4tu8D8eAoGun6EE9Y3iZoKocoJZ7lbFxdm8ulMurY1u6nVl9ePN2T7s2u0XH/HAA8neLN+wP0i4oXD+AsIN4J8dWRagbzMCPe9JekEc+RLpH98hngtKTSpeLxtSCAgrTEiw98ERagBxAPYAF48aJ3tXgsNQEKkhWPP+8HUJZGPIuYq5eaVDyAcnjpavH4E+4A5WmJFx9q8eKaE/EACtPIZ+LFFvEACtOIF7fr/49HxQMoT0u8WPHUIh5AD5h8qnhqEQ+gBxAPYEHU4uWWmgRBlA2Jp6DiAfSIPKuqEP4CsI6blJFKzKUAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:NTypeInto.Target>
+                          </uix:NTypeInto>
+                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Laskupäivä'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="387.2,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_21" ScopeIdentifier="8142697a-1374-4e90-8df3-5a8b7b2aa160" Text="[CurrentRow.Item(2).toString]" Version="V3">
+                            <uix:NTypeInto.Target>
+                              <uix:TargetAnchorable BrowserURL="https://koulutus.netvisor.fi/evo/accounting/purchaseinvoice/editinvoice.aspx?page_transaction=446264" DesignTimeRectangle="1196, 324, 109, 30" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'INPUT invoicedate'" FullSelectorArgument="&lt;webctrl id='iframe_1679991611352' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='invoicedate' tableRow='1' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='iframe_1679991611352' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='invoicedate' type='text' tag='INPUT' class='input--text' aaname='' /&gt;" Guid="34e03343-b334-4d95-81e5-3d01adc7a1e9" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHEAAAAiCAYAAABoZDaJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAEISURBVGhD7dqxCoNAEEXR/P+3CbZ+gTaKgoKK4oQboiAx/e7jXZhiV7vDdvMKl31GFOiGOAxDVFUVRVF4Eh6MsDq7ELksyzLquo6u66Lve0+Cgw1GWJ2QFyK6TdPEOI4xz3MsyxLrunoSGkywmabpY4UZXYg8Uz5u2xbHcXgSHox4bJjRDRFtfnJphxGv8hERYZdHWD0i7vv+PbnUw8qImWdEgYwokBEFMqJARhTIiAIZUSAjCmREgYwokBEFMqJARhTIiAIZUSAjCmREgYwo0F9EL0rl0+OiFIuobdt+Ty71sPpZHj7X+FkT9+5pumGD0eMaP3GJLs/Uk+5gdALSDdHlmRGzL+INaZMOh2VszKgAAAAASUVORK5CYII=" InformativeScreenshot="e81ef8c6fe9d7cace2d00b07a4fdceba.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Netvisor :: Ostolasku' /&gt;" SearchSteps="FuzzySelector, Image" Version="V2" Visibility="Interactive">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                    <uix:Target DesignTimeRectangle="969, 318, 218, 42" ElementType="Text" FriendlyName="'Laskupäivä'" FullSelectorArgument="&lt;webctrl id='iframe_1679991611352' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl isleaf='1' tableCol='3' tableRow='1' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl id='iframe_1679991611352' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl isleaf='1' type='' class='text__emp width__per--20 required' tag='TD' aaname='Laskupäivä' check:innerText='Laskupäivä' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAN4AAAAuCAYAAABH9aeuAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAL2SURBVHhe7Zi/a1RREEbzH1pbaxOwESJoa2MhaaysBFNpOtOJNsIiCAsmhUKEBZt0IjZqec23u98yjO/puvLe6O45MNx3f7w7d5c5uUn2GgCMzt5sNmsEQYwbqxtPHQAYFnuGeAAjgngABSAeQAGIB1AA4gEUgHgABSAeQAGIB1AA4gEUgHgABSAeQAGIB1AA4gEUgHgABWws3pOT5+3KtZvzdkjuP3w8z/N6erYcGY5Pn7+067fuznMKfTb1NS42Ocv57GO7euPO6nvSHrfvPWhfv32f92E3QbwA4sFYIB5AAYOLZ3Ec8QYRvhHimihZFs95vU/XObRWY3pXOIdumkdPn83nFPnm6TpL3DeeJe7pPdSq7zXCZ4nhOdhyLi5aOzhYtIlBxfOaHFmIPK8xzYlY7C7iKG/XObzud3kUFse/Zub5vrNYsjjvPN6zL2/+4QNbxnTa2mTS2unppVmXaqlVX+NLBr/xIhYiF6b7XbjY3cZCF38qnub6xiIWK85H8UTO3XWWiOXOnwG2jMPD1vb3Wzs+XoinVn2NLxlFPIvgsGixuPOccbE78m3RdQ7ny+L17R3f7TpTn3gWSev1rLZLKq/zfoi3AxwdLaRzqB8YVLy8xkJkAdYp9hgxp3NYMpHH1hHPcljseKY+8YTGtPfJi1c/5ch5nQPxtpzKG6+ryPxOFiCSpYnFvs6eURjvYQG8j/BeHst587yIZzF61pgjznm9vyOfA/G2nDH+xusKFdbZ+w8rAXJYkly0MfqK3e9YkF/t4TVRvBx/cxYRBVWrvun7jhBvRxjyv5pd4cKKBa/27bvzeaHHwuuSwjeEyMUebzSPxbOo+PVrn56zeHrv5eTNaq2lM87ldy2j98lnMc7vdSaeVaF1Xhs/I+weG4v3PxHFi6IBVIF4AAUgHkABOyEewL8G4gEUgHgABSAeQAGIB1AA4gEUgHgABSAeQAGIB1AA4gEUgHgABSAeQAGIB1DASjw9EAQxbnDjAYzIwrPWfgBcHFiRNCPY6QAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:NTypeInto.Target>
+                          </uix:NTypeInto>
+                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Loppusumma'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="387.2,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_22" ScopeIdentifier="8142697a-1374-4e90-8df3-5a8b7b2aa160" Text="[CurrentRow.Item(11).toString]" Version="V3">
+                            <uix:NTypeInto.Target>
+                              <uix:TargetAnchorable BrowserURL="https://koulutus.netvisor.fi/evo/accounting/purchaseinvoice/editinvoice.aspx?page_transaction=446264" DesignTimeRectangle="651, 644, 155, 30" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'INPUT sum'" FullSelectorArgument="&lt;webctrl id='iframe_1679991611352' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='sum' tableRow='8' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='iframe_1679991611352' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='sum' type='text' tag='INPUT' class='input--text width__per--50' aaname='' /&gt;" Guid="9665eff0-7e6b-441a-a894-d55c39a054ba" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAJ8AAAAiCAYAAABBTwtLAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAEfSURBVHhe7dwxioRAGEThuf/ZBFNPoImioKCi+C+1jKKwbjLtVPI+qEA0fHTWvgIwIT7YXOLrui6KoogsyxhLOnWlvs6O+PQiz/MoyzKapom2bRlLMvWkrtTXOcAjPpVZVVX0fR/jOMY0TTHPM2MfTR2pp2EYfvtSZ7sjPh2N+mBZlti2jbGkU1c62NTZ7hKfStWHQGrqSqfgbXyqE3iK+rqNb13X9xOQnvoiPlgQH2yIDzbEBxvigw3xwYb4YEN8sCE+2BAfbIgPNsQHG+KDDfHBhvhgQ3ywIT7YEB9siA82/8bHBSI86fYCkS7z1nX9fgLSU19/Xhrff5ehXxtwdxcpqSd1dfu7DNELlamjkbGUU1fn8OQSH/BNxAeTiB972yWUh919eAAAAABJRU5ErkJggg==" InformativeScreenshot="634efc857292a83e5466858fc9938f3d.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Netvisor :: Ostolasku' /&gt;" SearchSteps="FuzzySelector, Image" Version="V2" Visibility="Interactive">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                    <uix:Target DesignTimeRectangle="424, 638, 218, 42" ElementType="Text" FriendlyName="'Loppusumma'" FullSelectorArgument="&lt;webctrl id='iframe_1679991611352' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='8' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl id='iframe_1679991611352' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='TD' class='text__emp required' aaname='Loppusumma' check:innerText='Loppusumma' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAN4AAAAuCAYAAABH9aeuAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAALzSURBVHhe7dmxaxRBFMdx/0Nra20CNkIELbWxkIAIglgISWXSmU5iIwRBSBFLhRMt0onYqOWY3+V+x8swFyfB3bfR7wceezs3Ozu7vJ+HeqUszGazxScAQ3HOTgWPoqhxil88YETOGcEDRkTwgAQED0hA8IAEBA9IQPCABAQPSEDwgAQED0hA8IAEBA9IQPCABAQPSEDwgAQXDt7Dp5vl6vVb5e3B+8UIgF4ED0hA8IAEgwfv67fv5cbt+/O5qms375YPs8+Lb8v8s8buPHhcnm+/XM7T+Y+fv7rn+D4qfRZ9pznxnh7zGio9i73YfTUf09H0jHGez7XOvUfPluvomrh+vK+fQft7srm9vMZr+n2q4jtt7Vfnfm5M2NFRKevrJ8fKoMFzs8Wmcfm6s+a4wXrm9ASv1cQuB+08weupnmeoKz5DDGSsuD9MzMFBKfv7pRweHifrOFo66lzjC4MGz3PcfOLGbjVkK4wa65lznuD5vOU8wavX1Vj9XN5PvV/x+/EcP0PP/rwXTNDGRilra6Xs7JwET0eda3xhsOCtavK6udyQbljz+mq0njle100srT24cV31/vy9jrYqeHE/cS9S78fPEPfne3ndVe9M6n37GkzU1tZJ6Fw6D/654MX7tcZsVSPXYZB67Kzg+X343g6an8Hn4nV1lNY7q9dt7Q8Tk/mLJ54TG9SN4zE3ZFzLTeuxnjn1ueio81bwrA5EvT+HQWNudq8bn6t+H96P163vI38KXusa38d7wQSN8Xe8VtXN1prjBj1rTiucq+bEgNTlRnYYWnPqULWqnjN08Hr2iwkb8l81WxWbq24eN5W5IdVwr/ffLefFpu6ZI/W99F8PsZGlFdB6HQdCpfV2997MP48dPIl/EOjaj5++nFoXl9OFg/e3xFDF5o965gCXCcEDEhA8IEF68ID/EcEDEhA8IAHBAxIQPCABwQMSEDwgAcEDEhA8IAHBAxIQPCABwQMSEDwgQTN4FEWNU/ziAaMr5TegueYF9XnjyAAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:NTypeInto.Target>
+                          </uix:NTypeInto>
+                        </Sequence>
+                      </ActivityAction>
+                    </ui:ForEachRow.Body>
+                  </ui:ForEachRow>
+                </Sequence>
+              </ActivityAction>
+            </uix:NApplicationCard.Body>
+            <uix:NApplicationCard.TargetApp>
+              <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAFoSURBVDhPY6Af+P+fMeXpnYlJT2+oQ0VIAylPb88G4v9AvAMqRDxIeXorEqoZjJOf3QmASmEBE98XMUz9sZ5h6vdUhvn/OUBCQKcvQzHg6Z37hY8fc4LVo4DKU90MPS/PAQ34D8WPGKZ9j0l+ensqsgFgQ57cLoTqggKQ5qpT/xkarx1AMgCMhZZ/Ouz78N41FAOe3r4FCliI5qwNFQzlR08CDfgOxpM+P0M3hPHoy4MCVx6fDHt49znUkH+ZDx8KMjBEzhRhiJ/3H4yTFj1nKDt8mKHx6kF0AxhmfXvNdPHJFyD+zn35ySnTu/crILY3NDABNd+GGwLCKcuvM3Q+O4puCOOhVweABvwH4h6IZhiIm1+EYgAET2aY8j0WqPER3IBVH85gagaB0FWcQA330QxYDJYDRSUoSkFRO+dLCVgMK0iYH4BiQNy8cKgMCSBh3g6I5rmzoCIkgriFakADpoEDlj6AgQEAkh4dRU72wboAAAAASUVORK5CYII=" InformativeScreenshot="21a9cb274537e6db6f7f52a2cb7f45d6.jpg" Selector="&lt;html app='chrome.exe' title='Netvisor' /&gt;" Url="https://koulutus.netvisor.fi/tableui/login/login.asp" />
+            </uix:NApplicationCard.TargetApp>
+          </uix:NApplicationCard>
+        </Sequence>
+      </ui:CommentOut.Body>
+    </ui:CommentOut>
   </ueab:SequenceX>
 </Activity>

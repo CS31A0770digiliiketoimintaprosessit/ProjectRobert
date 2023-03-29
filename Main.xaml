@@ -135,7 +135,7 @@
       <x:Boolean x:Key="ShouldCollapseAll">False</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <ueab:SequenceX DisplayName="MainActivity" sap:VirtualizedContainerService.HintSize="1817.5999999999997,14816" sap2010:WorkflowViewState.IdRef="SequenceX_1">
+  <ueab:SequenceX DisplayName="MainActivity" sap:VirtualizedContainerService.HintSize="1817.5999999999997,12237.6" sap2010:WorkflowViewState.IdRef="SequenceX_1">
     <ueab:SequenceX.Variables>
       <Variable x:TypeArguments="ue:IWorkbookQuickHandle" Default="[new WorkbookQuickHandle(workbookPath:=&quot;Project_Notebook.xlsx&quot;,visible:=True,autoSave:=False,createNew:=True,readOnly:=False,isWorkspace:=True)]" Name="Notes" />
       <Variable x:TypeArguments="x:String" Default="LUT9.Robert.Opiskelija" Name="Username" />
@@ -749,7 +749,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:LogMessage>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Toimittajatietojen syöttäminen Netvisoriin" sap:VirtualizedContainerService.HintSize="1755.2,2671.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_6" InteractionMode="DebuggerApi" ScopeGuid="f4df5839-b973-4181-9c78-3c39312a7be9" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Toimittajatietojen syöttäminen Netvisoriin" sap:VirtualizedContainerService.HintSize="1755.2,52.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_6" InteractionMode="DebuggerApi" ScopeGuid="f4df5839-b973-4181-9c78-3c39312a7be9" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
@@ -866,8 +866,8 @@
       </uix:NApplicationCard.TargetApp>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </uix:NApplicationCard>
@@ -879,15 +879,15 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:LogMessage>
-    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="1755.2,2602.4" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="1755.2,2642.4" sap2010:WorkflowViewState.IdRef="CommentOut_2">
       <ui:CommentOut.Body>
-        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="641.6,2524" sap2010:WorkflowViewState.IdRef="Sequence_37">
+        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="641.6,2564" sap2010:WorkflowViewState.IdRef="Sequence_38">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Netvisor" sap:VirtualizedContainerService.HintSize="579.2,2412" sap2010:WorkflowViewState.IdRef="NApplicationCard_8" InteractionMode="DebuggerApi" ScopeGuid="8142697a-1374-4e90-8df3-5a8b7b2aa160" Version="V2">
+          <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Netvisor" sap:VirtualizedContainerService.HintSize="579.2,2452" sap2010:WorkflowViewState.IdRef="NApplicationCard_9" InteractionMode="DebuggerApi" ScopeGuid="8142697a-1374-4e90-8df3-5a8b7b2aa160" Version="V2">
             <uix:NApplicationCard.Body>
               <ActivityAction x:TypeArguments="x:Object">
                 <ActivityAction.Argument>
@@ -899,7 +899,7 @@
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <uas:GetUsernamePasswordX OrchestratorCredentialName="{x:Null}" TimeoutInSeconds="{x:Null}" AutosubmitTimeoutSeconds="10" Credential="[credentials]" CredentialName="UiPath: https://koulutus.netvisor.fi/tableui/login/login.asp" CredentialsSource="CredentialsManager" DisplayName="Get Username/Password" sap:VirtualizedContainerService.HintSize="483.2,174.4" sap2010:WorkflowViewState.IdRef="GetUsernamePasswordX_3" />
+                  <uas:GetUsernamePasswordX OrchestratorCredentialName="{x:Null}" TimeoutInSeconds="{x:Null}" AutosubmitTimeoutSeconds="10" Credential="[credentials]" CredentialName="UiPath: https://koulutus.netvisor.fi/tableui/login/login.asp" CredentialsSource="CredentialsManager" DisplayName="Get Username/Password" sap:VirtualizedContainerService.HintSize="483.2,174.4" sap2010:WorkflowViewState.IdRef="GetUsernamePasswordX_4" />
                   <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'LUT9.Robert.Opiskelija'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="483.2,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_17" ScopeIdentifier="8142697a-1374-4e90-8df3-5a8b7b2aa160" Text="[credentials.Username]" Version="V3">
                     <uix:NTypeInto.Target>
                       <uix:TargetAnchorable BrowserURL="https://koulutus.netvisor.fi/tableui/login/login.asp" DesignTimeRectangle="525, 485, 275, 37" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'LUT9.Robert.Opiskelija'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='username' tableRow='2' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='username' type='text' tag='INPUT' class='' aaname='' /&gt;" Guid="7311d30b-07fe-429e-a967-1a67bd1d3225" ImageBase64="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" InformativeScreenshot="942cff07946a6f281c83f86cf948d058.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Netvisor' /&gt;" SearchSteps="FuzzySelector, Image" Version="V2" Visibility="Interactive" />

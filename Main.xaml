@@ -141,7 +141,7 @@
       <x:Boolean x:Key="ShouldCollapseAll">False</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <ueab:SequenceX DisplayName="MainActivity" sap:VirtualizedContainerService.HintSize="1820,31264" sap2010:WorkflowViewState.IdRef="SequenceX_1">
+  <ueab:SequenceX DisplayName="MainActivity" sap:VirtualizedContainerService.HintSize="1820,31556.000000000004" sap2010:WorkflowViewState.IdRef="SequenceX_1">
     <ueab:SequenceX.Variables>
       <Variable x:TypeArguments="x:String" Name="ibanNumber" />
       <Variable x:TypeArguments="x:String" Default="5" Name="DateFilter" />
@@ -923,13 +923,13 @@
       </sap:WorkflowViewStateService.ViewState>
     </ui:LogMessage>
     <ui:WriteRange AddHeaders="True" DataTable="[Ostolaskut]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="1758,116" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="Ostolaskut 2023" StartingCell="A1" WorkbookPath="[System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), &quot;Downloads/lappeenrannan-kaupungin-ostolaskut-2021.xlsx&quot;)]" />
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Toimittajatietojen syöttäminen Netvisoriin" sap:VirtualizedContainerService.HintSize="1758,11540" sap2010:WorkflowViewState.IdRef="NApplicationCard_11" InteractionMode="DebuggerApi" ScopeGuid="f4df5839-b973-4181-9c78-3c39312a7be9" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Toimittajatietojen syöttäminen Netvisoriin" sap:VirtualizedContainerService.HintSize="1758,11799" sap2010:WorkflowViewState.IdRef="NApplicationCard_11" InteractionMode="DebuggerApi" ScopeGuid="f4df5839-b973-4181-9c78-3c39312a7be9" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="546,11322" sap2010:WorkflowViewState.IdRef="Sequence_24">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="546,11581" sap2010:WorkflowViewState.IdRef="Sequence_24">
             <Sequence.Variables>
               <Variable x:TypeArguments="ui:PasswordCredentials" Name="credentials" />
             </Sequence.Variables>
@@ -1310,6 +1310,17 @@
                 </uix:TargetAnchorable>
               </uix:NTypeInto.Target>
             </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Laskun summa'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="484,219" sap2010:WorkflowViewState.IdRef="NTypeInto_30" ScopeIdentifier="f4df5839-b973-4181-9c78-3c39312a7be9" Text="0" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://koulutus.netvisor.fi/evo/accounting/purchaseinvoice/purchaseinvoicelist.aspx?page_transaction=446264#/" DesignTimeRectangle="1124, 424, 100, 25" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT beginsum'" FullSelectorArgument="&lt;webctrl tableRow='1' tag='TABLE' /&gt;&lt;webctrl id='beginsum' tableRow='1' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='beginsum' type='text' tag='INPUT' class='input--text width__px--small' aaname='' /&gt;" Guid="7be77116-bd22-4011-bd8c-6956cffc3f5f" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGgAAAAdCAYAAABG8ynTAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADaSURBVGhD7doxioRAEEbhvf/ZBE8gYi4GZgpayxt2RGE2nf6D96ASO6sPo+6fsugECu8BNE1T9X1fXdc5DYbdY3DvAuJgGIaa57mWZXEaDLvH4I50AaG3rmtt21bHcTgNht1jgMW7C4hfbN/3Os/z74t9O3aPARbvHkAoWtswECg4gcITKDyBwhMoPIHCEyg8gcITKDyBwhMoPIHCEyg8gcITKDyBwvsXiGtWrlytbRh8vPLmocI4jq8rV2sTu8fg46MR4gA9fjHn+8Pu7zj0ALK8BApPoOiqfgFpGk3T9Uvu1QAAAABJRU5ErkJggg==" InformativeScreenshot="42a2bf39fb29974bb9f77b4f8d946c1a.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Netvisor :: Ostolaskuluettelo' /&gt;" SearchSteps="FuzzySelector, Image" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="1124, 406, 452, 18" ElementType="Text" FriendlyName="'Laskun summa'" FullSelectorArgument="&lt;webctrl tableRow='1' tag='TABLE' /&gt;&lt;webctrl aaname='Laskun summa' tableRow='1' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aaname='Laskun summa' type='' tag='DIV' class='' check:innerText='Laskun summa' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAcgAAAAWCAYAAABE4gwBAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJ5SURBVHhe7dpNaxNBGMBxP5Ufodd+BJGC0IKSelJoQXqreFPRa1t68SJoD4JK6aUXA7l5yyGgohBz6Qd4ujPPzs5LJ9nZ+JJ2+f9goZmdzSa7tH8mzS0BAABXEEgAADIIJAAAGQQSAIAMAgkAQAaBBAAgwwfy+4ns3n0qb37Wj//IDzl7dF+ejeqHAADcMAQSAICMwkBq8NY3HtptbedUvtV75MurZnx940jO7WASSDvHPPevJJxDOb6zr+es5qztHMjB4wf1c5W9lnsnv3XYHu9f18XbJ3L79Vf78/j5ZjXvU3WugT3GjJv96XlK5y28HgCAXigKpAmHi41GbVBHLghcxcREgxUEMgpXEs4kkCY2uk/n+XN6Yfj0+EONcksgm3jb97kd7Vtmnvs5vh4AgL5Y4iPWMHJxID2d8/L9x+o564BZbYF0K9A0hN688bZAxkGLo951Xix9TwCAPigLZL2ach8p+pVevC9dKZrHn19sBfFYHMh5gUvpSi95HS2BbD6KbQlkybyF1wMA0AsFgdSo+XDMXzH5iARz7PO6VWRybHjODoH05gc2XA3+3UCWXw8AwM3VPZBViJoVUxQ/jYjOi6Phw6PjLkhmfvPll8JAXo2Y/x+k/yKNGR/8n0CG1wMA0BtJIOOPDcN4uTETiTAkGjnd5wOXrqqC2ATn0W+M1uOFgXTxc+cMw2Rel44fyYd3e/8okJUF1wMA0A8+kAAAoEEgAQDIIJAAAGQQSAAAMggkAAAZUSAnk4mMRiMZDodsK9jMtTf3oCvu22q3Ze8bgOutCaT5BR+PxzKdTmU2m7GtYDPX3tyDLn9suW+r35a5bwCuO5FLxYzxYzb0W6EAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
             <uix:NClick ClickType="Single" DisplayName="Click 'Hae ostolaskulistaus'" sap:VirtualizedContainerService.HintSize="484,158" sap2010:WorkflowViewState.IdRef="NClick_32" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f4df5839-b973-4181-9c78-3c39312a7be9" Version="V3">
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="https://koulutus.netvisor.fi/evo/accounting/purchaseinvoice/purchaseinvoicelist.aspx?page_transaction=446264#/" DesignTimeRectangle="658, 474, 130, 26" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Hae ostolaskulistaus'" FullSelectorArgument="&lt;webctrl tableRow='1' tag='TABLE' /&gt;&lt;webctrl class='btn--info' tableRow='2' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl class='btn--info' type='' tag='DIV' aaname='Hae ostolaskulistaus' check:innerText='Hae ostolaskulistaus' /&gt;" Guid="d9bb9625-2858-4be9-892d-2c3cb8357e5e" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAIYAAAAeCAYAAADpTGa/AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAcwSURBVGhD7VtbT1RXFD7FGFttX9qqpEn9AX3oH+lTX5v0oSY1MU2a0ioCCqIgoNbG2iJemlbtLRpNk5oitwoWxQsMN2VQuQ+3YQC5yFwQZPVbe58rnn1mnkjrnJ18zt5rrb3W2nt9Z589ZNTIb35zaS8QY2VlxUcaYnUzicHKPZVjtPnrR6Qd9pFO4Jpz7e0EEcRgQc61CXqvYoQ+uDRHH15ZAKL6pwF//LKOueZce+aAQQ5BjOfPn9PWY4/p/Z+e0KbTM6RV+EgncM259swB5oIgBjNkeXlZHCkbK6ZIK1dh2kVmh693lxv4b+s3VkAPDjAXmBOCGEtLS/J9812EtO+B1Z8GfP3LrQcHmAsvEuPbcQsnbH1/nB5jJTGOj/pIZyiJ8c1wSsjMv0hafrdD9vqRVnrns9sO2VpD5HWw31VnoY8ys2FX4qZLjtRi2GHFe7ukibTsVhcbC1sP1r2wt2sGJTGODaaEn6dwbZ3ApcUur4/SDC1Q7eEBp3wNwXnF+iZcdRZmqCFBFGrrcdElR2ox7LDF68ZXwUSUTh51s5PYOwib1Xu7VlAS42hfSrggiDHplF9nYjylmtJeMd68v4rW7/xNRzVppXjKdNsteb+aOm2/Oq7K7s2if0z5+p2NQsbxfpgginffNW3d50/LQrXiqdTnWb6sPF8tvUtbXeS89ljfmMNGK+oXsawYDylzF8aQ2+Nx3tque465dv+sz+rB18Ux+MnrEHaq/NTx3PcnJSiJceQxAGabcB9LYuAWa9dfX5DEKHmMxBqwQP42bLQEtf7ZLOy3FFTS2UldjCYKWQQy2fwz2I4LbTRpx7o20u7EdSm3OarK7aK8EX2IFh8Me8yf0gvVhTzrFXkGSbs6ifUYbcnMXxJjlDaV4LV55SnNQjvc0WXKZf5GjAeOeNr9RRg9ofIy9N38B+XfEESbnPHIT9bAPZ77/ki7JPVVEqPsYUoQxBjrpg07LpjQLk9JYhTjSeziBcaplvuwl6+eMPr3KacXuvgcnTwEX/WLYmNDzQGHf0ZuP/uISR+63dC9W9DNUZCeUVsVNoHthuFuAE8w+mKzekeSzJ8UmzgU6PTI02YDubCbfCL6MgY28fIs1psw59pjO+fb+p1MjGmsXe0/b4BfJZyDLnfNzyueen+SQkmMki5aVxoE5KdqfMH2xDvbPNUUsU07ZWado/WfngNpztMXj7DAML4OlUyIBSSCTULOenH89ww4/PP88xFeeEgfd8lNgY91pVHqxhPW8fsZMV/LwlGp53ceeck5XvNlDkOBdsSTeW7Y4cxzXekU3UANhxvLhXzDjjrEkPnx2hPBaeTwjAJXW0z/LLfiGTHabH3E60SHiVGs9i+IIXLgsSo/r3jq/VHV0xwriVEMxunIOHRf78tPa9wpCkBhsNCm12rn8QSBGIUd9HZuN9UhUUcT9uN0fbWcW2TS4V8rjoiFxntwIdL95/Txpugx4ZxPANFiYTqe1STmc15yjtd8mUOoJeCRJ693ARtstHmq2tkg5GLtFKXbuCQmgji2C6V/KzbnP0L1OM1DLS3oh814Wgc6sSkqP9Ch9J/bz8QYE+vxys+Kx/Ht8dT7I3OTsMbyU4xVxMgoak8JkhijDplW8xTEmKOagja5ON6AwjbobtLuR8u6vWR2qKkS73ued5Pe3X6WtJxm048BPioTQSSL/hv7/6Yfw4iJew33t2y/ps9vl7EmxkVfbtaA5/yMojFZqOa7HnlyXldwuZMxtHbsOp50trNizMtT448GYSPkD3Hko//Wvgl6gHAcwx5P+uF4av+SGHJv1fmp43ntTzKoiXEgYEOrciyJMWLT4Wmo5hMDxNjXQjlD0EdDdOLjU/TaJ2H5ZIyHSIOd0MVYdwa6frGgeN8gfDjjCTuaoqqPTpF2MQLfOHoDTTiZ4ujPQn4a80/T570ruITJ+ZxXogtHZ/Yd5fyMA6N6oW4r8hxCnnOi6G2/nBAxtFsoXASkQl6SGP0inpg/jnd5HuTTli8tIB/zULMzniTAJJUXzCr95/CrZBQ+v2z0yE8dz2t/7PvrNlYSQyvEjTcFnOOkIrgz2OU1MSQUpZq9+DpWyAs3WpQutT3Dbs5QeT7r9PlGW+3HBrtdrG/AlGeLouvN5teQG7bu88cId1GQ5Cb6Hnl2Lulybsa6pM+kviKzNrnNhn0m8W/Kxb547aMqnnp/kkJJjII7PtIZKmJk5OPo85G2UBNjb6OPNIaaGLk3cJGy4I/Ta6wmxp56E1qO1ffH6TFWEkPLrgXqPODr3eUG/ud6N2KI/zbAE3dV+0hHoPbMAQcx+Aeg2X+N0raydsrYXU2vfHVNR6Wt749f1jHXfFtZh+CA+WNg/hsI/2R8cXGR9lSGxU/IxWvFR9qAa861Zw6Y/32A/zFODVbE43GKxWI+0ghcc669cVqYxODGAmYLK/k94yN9wDXn2hukICL6F6XGq3nqx4VGAAAAAElFTkSuQmCC" InformativeScreenshot="2327e907ac11bef5bf2c160d67ce9d8b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Netvisor :: Ostolaskuluettelo' /&gt;" SearchSteps="FuzzySelector, Image" Version="V2" Visibility="Interactive">
@@ -1497,23 +1508,23 @@
     </Assign>
     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1758,94" sap2010:WorkflowViewState.IdRef="LogMessage_17" Message="[&quot;Lopetusaika: &quot;+Lopetusaika.toString()]" />
     <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{&quot;Robotin läpimenoaika&quot;, Lopetusaika.ToString}]" DataTable="[Virhelogi]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="1758,189" sap2010:WorkflowViewState.IdRef="AddDataRow_7" />
-    <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="1758,656" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_4" ResizeWindow="None" WorkbookPath="[System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), &quot;Downloads/Robotin_raportti.xlsx&quot;)]">
+    <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="1758,377" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_4" ResizeWindow="None" WorkbookPath="[System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), &quot;Downloads/Robotin_raportti.xlsx&quot;)]">
       <ueab:ExcelApplicationCard.Body>
         <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Raportti" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,383" sap2010:WorkflowViewState.IdRef="Sequence_72">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,104" sap2010:WorkflowViewState.IdRef="Sequence_72">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:WriteRange AddHeaders="True" DataTable="[Ostolaskut2023]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="388,116" sap2010:WorkflowViewState.IdRef="WriteRange_3" SheetName="Käsitellyt laskut" StartingCell="A1" WorkbookPath="[System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), &quot;Downloads/Robotin_raportti.xlsx&quot;)]" />
-            <ui:WriteRange AddHeaders="True" DataTable="[Virhelogi]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="388,116" sap2010:WorkflowViewState.IdRef="WriteRange_4" SheetName="Robotin_logi" StartingCell="A1" WorkbookPath="[System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), &quot;Downloads/Robotin_raportti.xlsx&quot;)]" />
           </Sequence>
         </ActivityAction>
       </ueab:ExcelApplicationCard.Body>
     </ueab:ExcelApplicationCard>
+    <ui:WriteRange AddHeaders="True" DataTable="[Ostolaskut2023]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="1758,116" sap2010:WorkflowViewState.IdRef="WriteRange_3" SheetName="Käsitellyt laskut" StartingCell="A1" WorkbookPath="[System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), &quot;Downloads/Robotin_raportti.xlsx&quot;)]" />
+    <ui:WriteRange AddHeaders="True" DataTable="[Virhelogi]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="1758,116" sap2010:WorkflowViewState.IdRef="WriteRange_4" SheetName="Robotin_logi" StartingCell="A1" WorkbookPath="[System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), &quot;Downloads/Robotin_raportti.xlsx&quot;)]" />
   </ueab:SequenceX>
 </Activity>
